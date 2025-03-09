@@ -48,7 +48,7 @@ MonoBehaviour:
   trackID: 0
   _connectedEndPoints:
   - {fileID: 2751537964198237037}
-  _closestCheckRadius: 0.25
+  _closestCheckRadius: 0.15
 --- !u!135 &3943875031637626200
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -508,7 +508,7 @@ MonoBehaviour:
   trackID: 0
   _connectedEndPoints:
   - {fileID: 8795937805413629434}
-  _closestCheckRadius: 0.25
+  _closestCheckRadius: 0.15
 --- !u!135 &842109626479663189
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -578,3 +578,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 0
   _trackPoints: []
+  _rotationDuration: 0.5
+  IsAligned: 1
