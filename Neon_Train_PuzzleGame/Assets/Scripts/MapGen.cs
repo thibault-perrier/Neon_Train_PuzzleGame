@@ -11,7 +11,6 @@ public class MapGen : MonoBehaviour
     [SerializeField] private List<GameObject> _tilePrefabs = new List<GameObject>();
     [SerializeField] private GameObject _floorPrefab;
 
-
     public void GenerateMap()
     {
         ClearMap();
@@ -23,7 +22,8 @@ public class MapGen : MonoBehaviour
             for (int z = 0; z < _length; z++)
             {
                 int randomIndex = Random.Range(0, _tilePrefabs.Count);
-                Instantiate(_tilePrefabs[randomIndex], new Vector3(transform.position.x + x, transform.position.y + 0.25f, transform.position.z + z), Quaternion.identity, transform);
+                Track track = Instantiate(_tilePrefabs[randomIndex], new Vector3(transform.position.x + x, transform.position.y + 0.25f, transform.position.z + z), Quaternion.identity, transform).GetComponent<Track>();
+                track.ID = x * _length + z;
             }
         }
     }
