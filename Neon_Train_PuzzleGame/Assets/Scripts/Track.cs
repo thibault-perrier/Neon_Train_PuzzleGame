@@ -10,12 +10,13 @@ public class Track : MonoBehaviour
     [SerializeField] private float _rotationDuration = 0.5f;
     public bool IsAligned = true;
 
-    void Awake()
+    public void Init(int tid)
     {
+        ID = tid;
         foreach (TrackEndPoint ep in GetComponentsInChildren<TrackEndPoint>())
         {
+            ep.Init(ID);
             _trackPoints.Add(ep);
-            ep.trackID = ID;
         }
     }
 

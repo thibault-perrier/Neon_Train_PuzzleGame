@@ -1,16 +1,22 @@
+using System.Collections;
 using UnityEngine;
 
 public class TrackFollower : MonoBehaviour
 {
+    [Header("Train Parameters")]
     [SerializeField] private float _folowerMaxSpeed = 5.0f;
     [SerializeField] private float _timeBeforeFullSpeed = 0.5f;
     private float _currentSpeed = 0.0f;
     private float _accelTimer = 0.0f;
+    [SerializeField] private float _derailAnimationTime = 0.5f;
 
+    [Header("For Level Initializer")]
     [SerializeField] private Track _currentTrack;
     private TrackEndPoint _startPoint;
     private TrackEndPoint _endPoint;
 
+    private bool _isRunning = true;
+    private bool _isDerailing = false;
     private float _currentTrackCompletion = 0.0f;
 
     void Start()
@@ -25,6 +31,7 @@ public class TrackFollower : MonoBehaviour
     // ask Track the position and rotation based on where it is on the track
     void Update()
     {
+
         Accelerate();
 
         // curr_d/d_max => v*t/d_max => d_max = 1 => v*t
@@ -32,18 +39,17 @@ public class TrackFollower : MonoBehaviour
 
         if (_currentTrackCompletion >= 1.0f)
         {
-            _currentTrackCompletion = 0.0f;
-            GetNextTrack();
+            if (GetNextTrack())
+                _currentTrackCompletion = 0.0f;
+            else
+                return;
         }
 
         if (_currentTrack != null)
         {
-            Vector3 position = Vector3.Lerp(_startPoint.transform.position, _endPoint.transform.position, _currentTrackCompletion);
-            // Quaternion rotation = _currentTrack.GetRotation(_currentTrackCompletion);
-
-            transform.position = position;
+            transform.position = _startPoint.EvaluatePosition(_currentTrackCompletion);
             // transform.rotation = rotation;
-            transform.forward = _endPoint.transform.position - _startPoint.transform.position;
+            transform.forward = _startPoint.EvaluateRotation(_currentTrackCompletion);
         }
     }
 
@@ -74,21 +80,54 @@ public class TrackFollower : MonoBehaviour
     }
 
 
-    private void GetNextTrack()
+    private bool GetNextTrack()
     {
         // ask if the track is aligned 
         // if it is not, derail the train
         // if it is, ask Track the closest track endPoint
 
         _startPoint = _endPoint.GetClosestEndPoint();
-        if (_startPoint == null)
+        if (!_isRunning || !_currentTrack.IsAligned || _startPoint == null)
         {
-            _currentTrack = null;
-            return;
+            _isRunning = false;
+            DerailTrain();
+            return false;
         }
 
         _endPoint = _startPoint.GetTrackEndPoint();
 
         _currentTrack = TrackManager.Instance.Tracks[_startPoint.trackID];
+
+        return true;
+    }
+
+    private void DerailTrain()
+    {
+        if (_isDerailing)
+            return;
+
+        Debug.Log("Derailing Train");
+        StartCoroutine(DerailTrainAnimation(transform.right));
+    }
+
+    private IEnumerator DerailTrainAnimation(Vector3 derailDir)
+    {
+        _isDerailing = true;
+
+        Vector3 orginUp = transform.up;
+        float timer = _derailAnimationTime;
+
+        while (timer > 0)
+        {
+            transform.up = Vector3.Lerp(derailDir, orginUp, timer / _derailAnimationTime);
+            timer -= Time.deltaTime;
+            yield return null;
+        }
+
+        transform.up = derailDir;
+        _isDerailing = false;
+
+        this.enabled = false;
+        yield return null;
     }
 }
