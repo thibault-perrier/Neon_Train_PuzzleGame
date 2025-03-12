@@ -548,7 +548,6 @@ MonoBehaviour:
   trackID: 34
   _connectedEndPoints:
   - {fileID: 601421496}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &13435350
 GameObject:
@@ -691,7 +690,6 @@ MonoBehaviour:
   _connectedEndPoints:
   - {fileID: 1279749756}
   - {fileID: 508971090}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &16963912
 SphereCollider:
@@ -762,7 +760,6 @@ MonoBehaviour:
   trackID: 47
   _connectedEndPoints:
   - {fileID: 961607887}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &17175718
 SphereCollider:
@@ -1292,7 +1289,6 @@ MonoBehaviour:
   trackID: 39
   _connectedEndPoints:
   - {fileID: 1271157925}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &43790978
 SphereCollider:
@@ -1505,7 +1501,6 @@ MonoBehaviour:
   trackID: 85
   _connectedEndPoints:
   - {fileID: 706799590}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &48492267
 GameObject:
@@ -1576,7 +1571,6 @@ MonoBehaviour:
   trackID: 41
   _connectedEndPoints:
   - {fileID: 2081611402}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &51885061
 GameObject:
@@ -1603,7 +1597,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 51885061}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.70710695, z: -0, w: 0.7071066}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: -0.0000003129243}
   m_LocalPosition: {x: 2, y: 0.25, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1611,7 +1605,7 @@ Transform:
   - {fileID: 946249658}
   - {fileID: 514508774}
   m_Father: {fileID: 2107380238}
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!114 &51885063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1829,7 +1823,6 @@ MonoBehaviour:
   trackID: 58
   _connectedEndPoints:
   - {fileID: 1083333606}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &69319967
 SphereCollider:
@@ -2292,7 +2285,6 @@ MonoBehaviour:
   trackID: 36
   _connectedEndPoints:
   - {fileID: 1448090075}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &84794861
 GameObject:
@@ -2698,7 +2690,6 @@ MonoBehaviour:
   trackID: 93
   _connectedEndPoints:
   - {fileID: 1027596831}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &101030643
 SphereCollider:
@@ -3165,7 +3156,6 @@ MonoBehaviour:
   trackID: 86
   _connectedEndPoints:
   - {fileID: 1146334437}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &117609254
 GameObject:
@@ -3459,7 +3449,6 @@ MonoBehaviour:
   trackID: 14
   _connectedEndPoints:
   - {fileID: 2022451207}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &134414101
 GameObject:
@@ -3691,7 +3680,6 @@ MonoBehaviour:
   trackID: 23
   _connectedEndPoints:
   - {fileID: 1438816081}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &146072298
 GameObject:
@@ -4565,7 +4553,6 @@ MonoBehaviour:
   _connectedEndPoints:
   - {fileID: 246558233}
   - {fileID: 1786250708}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &171873729
 SphereCollider:
@@ -4772,7 +4759,6 @@ MonoBehaviour:
   _connectedEndPoints:
   - {fileID: 1613319710}
   - {fileID: 1711317952}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &174895716
 SphereCollider:
@@ -4843,7 +4829,6 @@ MonoBehaviour:
   trackID: 20
   _connectedEndPoints:
   - {fileID: 1156719653}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &175463241
 SphereCollider:
@@ -5033,7 +5018,6 @@ MonoBehaviour:
   trackID: 52
   _connectedEndPoints:
   - {fileID: 1807626373}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &185100516
 GameObject:
@@ -5151,7 +5135,6 @@ MonoBehaviour:
   trackID: 11
   _connectedEndPoints:
   - {fileID: 1590174550}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &191382018
 SphereCollider:
@@ -5407,39 +5390,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 196322406}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &200189675
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 200189676}
-  m_Layer: 6
-  m_Name: EndPoints
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &200189676
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 200189675}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.25, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1835127975}
-  - {fileID: 760604036}
-  m_Father: {fileID: 1096307211}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &201891811
 GameObject:
   m_ObjectHideFlags: 0
@@ -5747,7 +5697,6 @@ MonoBehaviour:
   trackID: 82
   _connectedEndPoints:
   - {fileID: 516828185}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &211565506
 SphereCollider:
@@ -6409,6 +6358,40 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 226619972}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &228051603
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 228051604}
+  m_Layer: 6
+  m_Name: EndPoints
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &228051604
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228051603}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.25, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1326322137}
+  - {fileID: 546042441}
+  - {fileID: 536192259}
+  m_Father: {fileID: 919582372}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &228723267
 GameObject:
   m_ObjectHideFlags: 0
@@ -6618,7 +6601,6 @@ MonoBehaviour:
   trackID: 60
   _connectedEndPoints:
   - {fileID: 171873728}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &246862705
 GameObject:
@@ -6774,7 +6756,6 @@ MonoBehaviour:
   trackID: 33
   _connectedEndPoints:
   - {fileID: 1393493789}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &252547293
 GameObject:
@@ -6845,7 +6826,6 @@ MonoBehaviour:
   trackID: 21
   _connectedEndPoints:
   - {fileID: 1974559044}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &256847770
 GameObject:
@@ -7138,7 +7118,6 @@ MonoBehaviour:
   trackID: 56
   _connectedEndPoints:
   - {fileID: 898747494}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &285411123
 SphereCollider:
@@ -7698,7 +7677,6 @@ MonoBehaviour:
   trackID: 61
   _connectedEndPoints:
   - {fileID: 317219964}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &303727883
 GameObject:
@@ -7769,7 +7747,6 @@ MonoBehaviour:
   trackID: 25
   _connectedEndPoints:
   - {fileID: 887842557}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &306420724
 GameObject:
@@ -7858,7 +7835,6 @@ MonoBehaviour:
   trackID: 62
   _connectedEndPoints:
   - {fileID: 2097958811}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &314964874
 SphereCollider:
@@ -7929,7 +7905,6 @@ MonoBehaviour:
   trackID: 41
   _connectedEndPoints:
   - {fileID: 840148912}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &314974113
 SphereCollider:
@@ -8000,7 +7975,6 @@ MonoBehaviour:
   trackID: 61
   _connectedEndPoints:
   - {fileID: 301891315}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &317219965
 SphereCollider:
@@ -8337,7 +8311,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 320058882}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.70710677, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.000000104308114}
   m_LocalPosition: {x: 5, y: 0.25, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -8345,7 +8319,7 @@ Transform:
   - {fileID: 416310872}
   - {fileID: 603495964}
   m_Father: {fileID: 2107380238}
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!114 &320058884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8433,7 +8407,6 @@ MonoBehaviour:
   trackID: 80
   _connectedEndPoints:
   - {fileID: 1669403489}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &320612568
 GameObject:
@@ -8587,7 +8560,6 @@ MonoBehaviour:
   trackID: 22
   _connectedEndPoints:
   - {fileID: 714684370}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &325564421
 GameObject:
@@ -9082,7 +9054,6 @@ MonoBehaviour:
   trackID: 44
   _connectedEndPoints:
   - {fileID: 1057218791}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &342887218
 GameObject:
@@ -9153,7 +9124,6 @@ MonoBehaviour:
   trackID: 67
   _connectedEndPoints:
   - {fileID: 428029487}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &343185443
 GameObject:
@@ -9188,7 +9158,6 @@ MonoBehaviour:
   trackID: 48
   _connectedEndPoints:
   - {fileID: 428891170}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &343185445
 SphereCollider:
@@ -9259,7 +9228,6 @@ MonoBehaviour:
   trackID: 66
   _connectedEndPoints:
   - {fileID: 1636222057}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &344224877
 SphereCollider:
@@ -10062,7 +10030,6 @@ MonoBehaviour:
   trackID: 23
   _connectedEndPoints:
   - {fileID: 1648539318}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &383872211
 SphereCollider:
@@ -10335,7 +10302,6 @@ MonoBehaviour:
   trackID: 42
   _connectedEndPoints:
   - {fileID: 1497439649}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &389005267
 GameObject:
@@ -10910,7 +10876,6 @@ MonoBehaviour:
   trackID: 85
   _connectedEndPoints:
   - {fileID: 2020320157}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &402818521
 SphereCollider:
@@ -11652,7 +11617,6 @@ MonoBehaviour:
   trackID: 66
   _connectedEndPoints:
   - {fileID: 1636222057}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &422622393
 GameObject:
@@ -11723,7 +11687,6 @@ MonoBehaviour:
   trackID: 30
   _connectedEndPoints:
   - {fileID: 2038713255}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &428029486
 GameObject:
@@ -11758,7 +11721,6 @@ MonoBehaviour:
   trackID: 67
   _connectedEndPoints:
   - {fileID: 342887221}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &428029488
 SphereCollider:
@@ -11948,7 +11910,6 @@ MonoBehaviour:
   trackID: 48
   _connectedEndPoints:
   - {fileID: 343185444}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &429771671
 GameObject:
@@ -12209,7 +12170,6 @@ MonoBehaviour:
   trackID: 43
   _connectedEndPoints:
   - {fileID: 1280323497}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &439273742
 GameObject:
@@ -12245,7 +12205,6 @@ MonoBehaviour:
   _connectedEndPoints:
   - {fileID: 1000686054}
   - {fileID: 1242429430}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &439273744
 SphereCollider:
@@ -12316,7 +12275,6 @@ MonoBehaviour:
   trackID: 9
   _connectedEndPoints:
   - {fileID: 1391417752}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &451433574
 SphereCollider:
@@ -12504,7 +12462,6 @@ MonoBehaviour:
   trackID: 12
   _connectedEndPoints:
   - {fileID: 1414429120}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &456193870
 SphereCollider:
@@ -12781,7 +12738,6 @@ MonoBehaviour:
   trackID: 12
   _connectedEndPoints:
   - {fileID: 775459267}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &468320683
 GameObject:
@@ -12852,7 +12808,6 @@ MonoBehaviour:
   trackID: 19
   _connectedEndPoints:
   - {fileID: 614390783}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &469093365
 GameObject:
@@ -13161,7 +13116,6 @@ MonoBehaviour:
   trackID: 87
   _connectedEndPoints:
   - {fileID: 1412948151}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &473208557
 SphereCollider:
@@ -13369,7 +13323,6 @@ MonoBehaviour:
   trackID: 4
   _connectedEndPoints:
   - {fileID: 1836968794}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &477372660
 SphereCollider:
@@ -13689,7 +13642,6 @@ MonoBehaviour:
   trackID: 8
   _connectedEndPoints:
   - {fileID: 1261014481}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &484124642
 SphereCollider:
@@ -13879,7 +13831,6 @@ MonoBehaviour:
   trackID: 55
   _connectedEndPoints:
   - {fileID: 1765464896}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &497096350
 GameObject:
@@ -14192,7 +14143,6 @@ MonoBehaviour:
   trackID: 59
   _connectedEndPoints:
   - {fileID: 16963911}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &508971091
 SphereCollider:
@@ -14351,7 +14301,6 @@ MonoBehaviour:
   trackID: 70
   _connectedEndPoints:
   - {fileID: 1489465633}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &514508773
 GameObject:
@@ -14455,7 +14404,6 @@ MonoBehaviour:
   trackID: 82
   _connectedEndPoints:
   - {fileID: 211565505}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &517829974
 GameObject:
@@ -14738,7 +14686,6 @@ MonoBehaviour:
   trackID: 95
   _connectedEndPoints:
   - {fileID: 718520599}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &527744550
 GameObject:
@@ -14960,7 +14907,7 @@ MonoBehaviour:
   - {fileID: 1414429120}
   _rotationDuration: 0.5
   IsAligned: 1
---- !u!1 &545584763
+--- !u!1 &536192258
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14968,81 +14915,138 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 545584764}
-  - component: {fileID: 545584766}
-  - component: {fileID: 545584765}
+  - component: {fileID: 536192259}
+  - component: {fileID: 536192261}
+  - component: {fileID: 536192260}
   m_Layer: 6
-  m_Name: Rail
+  m_Name: EndPoint.2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &545584764
+--- !u!4 &536192259
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 545584763}
+  m_GameObject: {fileID: 536192258}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.55, z: 0}
-  m_LocalScale: {x: 1, y: 0.1, z: 0.25}
+  m_LocalRotation: {x: -0, y: 0.70710707, z: -0, w: 0.70710653}
+  m_LocalPosition: {x: -0.5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 578774550}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &545584765
-MeshRenderer:
+  m_Father: {fileID: 228051604}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!135 &536192260
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 545584763}
+  m_GameObject: {fileID: 536192258}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 1199e6751dc75914aa0fbdb24e84d579, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &545584766
-MeshFilter:
+  serializedVersion: 3
+  m_Radius: 0.1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &536192261
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 545584763}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_GameObject: {fileID: 536192258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c463df61b3a6d648a27aeb5b75870f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trackID: 42
+  _connectedEndPoints:
+  - {fileID: 1326322135}
+  _isTurn: 0
+--- !u!1 &546042438
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 546042441}
+  - component: {fileID: 546042439}
+  - component: {fileID: 546042440}
+  m_Layer: 6
+  m_Name: EndPoint.1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &546042439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546042438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c463df61b3a6d648a27aeb5b75870f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trackID: 42
+  _connectedEndPoints:
+  - {fileID: 1326322135}
+  _isTurn: 1
+--- !u!135 &546042440
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546042438}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &546042441
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546042438}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.00000058114523}
+  m_LocalPosition: {x: 0, y: 0, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 228051604}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!1 &552581710
 GameObject:
   m_ObjectHideFlags: 0
@@ -15112,7 +15116,6 @@ MonoBehaviour:
   trackID: 37
   _connectedEndPoints:
   - {fileID: 1192964667}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &556186422
 GameObject:
@@ -15180,7 +15183,6 @@ MonoBehaviour:
   trackID: 5
   _connectedEndPoints:
   - {fileID: 1557106012}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &558808585
 SphereCollider:
@@ -15383,112 +15385,6 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 577119536}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &578774549
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 578774550}
-  - component: {fileID: 578774553}
-  - component: {fileID: 578774552}
-  - component: {fileID: 578774551}
-  m_Layer: 6
-  m_Name: Model
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &578774550
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 578774549}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.95, y: 0.5, z: 0.95}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 545584764}
-  m_Father: {fileID: 1096307211}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &578774551
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 578774549}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &578774552
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 578774549}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 640d7f7bd39da0e4890a38dfc17840af, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &578774553
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 578774549}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &578817601
 GameObject:
@@ -15852,7 +15748,6 @@ MonoBehaviour:
   trackID: 37
   _connectedEndPoints:
   - {fileID: 2086271740}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &584662618
 SphereCollider:
@@ -15956,7 +15851,6 @@ MonoBehaviour:
   trackID: 69
   _connectedEndPoints:
   - {fileID: 1761489453}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &589627412
 SphereCollider:
@@ -16293,7 +16187,6 @@ MonoBehaviour:
   trackID: 34
   _connectedEndPoints:
   - {fileID: 11633997}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &601421497
 SphereCollider:
@@ -16480,7 +16373,6 @@ MonoBehaviour:
   trackID: 91
   _connectedEndPoints:
   - {fileID: 1959331011}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &612239183
 SphereCollider:
@@ -16551,7 +16443,6 @@ MonoBehaviour:
   trackID: 19
   _connectedEndPoints:
   - {fileID: 468320686}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &614390784
 SphereCollider:
@@ -16658,7 +16549,6 @@ MonoBehaviour:
   trackID: 15
   _connectedEndPoints:
   - {fileID: 917784305}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &616825692
 GameObject:
@@ -16693,7 +16583,6 @@ MonoBehaviour:
   trackID: 63
   _connectedEndPoints:
   - {fileID: 826602685}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &616825694
 SphereCollider:
@@ -16870,7 +16759,6 @@ MonoBehaviour:
   trackID: 16
   _connectedEndPoints:
   - {fileID: 1715898317}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &620644785
 SphereCollider:
@@ -16941,7 +16829,6 @@ MonoBehaviour:
   trackID: 89
   _connectedEndPoints:
   - {fileID: 1747810880}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &623778368
 SphereCollider:
@@ -17188,7 +17075,6 @@ MonoBehaviour:
   trackID: 77
   _connectedEndPoints:
   - {fileID: 1333939085}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &634984919
 GameObject:
@@ -17331,7 +17217,6 @@ MonoBehaviour:
   trackID: 86
   _connectedEndPoints:
   - {fileID: 648980091}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &641687768
 SphereCollider:
@@ -17604,7 +17489,6 @@ MonoBehaviour:
   trackID: 17
   _connectedEndPoints:
   - {fileID: 1112620512}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &648980088
 GameObject:
@@ -17675,7 +17559,6 @@ MonoBehaviour:
   trackID: 86
   _connectedEndPoints:
   - {fileID: 641687767}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &649858243
 GameObject:
@@ -18078,7 +17961,6 @@ MonoBehaviour:
   trackID: 76
   _connectedEndPoints:
   - {fileID: 1700777248}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &667545671
 GameObject:
@@ -18658,7 +18540,6 @@ MonoBehaviour:
   trackID: 45
   _connectedEndPoints:
   - {fileID: 1043407025}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &699524814
 GameObject:
@@ -18693,7 +18574,6 @@ MonoBehaviour:
   trackID: 84
   _connectedEndPoints:
   - {fileID: 2111865433}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &699524816
 SphereCollider:
@@ -18764,7 +18644,6 @@ MonoBehaviour:
   trackID: 28
   _connectedEndPoints:
   - {fileID: 2009242837}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &704817620
 SphereCollider:
@@ -18835,7 +18714,6 @@ MonoBehaviour:
   trackID: 85
   _connectedEndPoints:
   - {fileID: 44876150}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &706799591
 SphereCollider:
@@ -18989,7 +18867,6 @@ MonoBehaviour:
   trackID: 22
   _connectedEndPoints:
   - {fileID: 325503930}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &714684371
 SphereCollider:
@@ -19114,7 +18991,6 @@ MonoBehaviour:
   trackID: 99
   _connectedEndPoints:
   - {fileID: 1325941775}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &718172035
 SphereCollider:
@@ -19185,7 +19061,6 @@ MonoBehaviour:
   trackID: 95
   _connectedEndPoints:
   - {fileID: 520006819}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &718520600
 SphereCollider:
@@ -19364,7 +19239,6 @@ MonoBehaviour:
   trackID: 97
   _connectedEndPoints:
   - {fileID: 1917376515}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &726843920
 SphereCollider:
@@ -19471,7 +19345,6 @@ MonoBehaviour:
   trackID: 2
   _connectedEndPoints:
   - {fileID: 2130216220}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &729951223
 GameObject:
@@ -19802,7 +19675,6 @@ MonoBehaviour:
   trackID: 74
   _connectedEndPoints:
   - {fileID: 1175206222}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &737577543
 SphereCollider:
@@ -19873,7 +19745,6 @@ MonoBehaviour:
   trackID: 64
   _connectedEndPoints:
   - {fileID: 1466776499}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &737816553
 SphereCollider:
@@ -20019,77 +19890,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 740445873}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &760604035
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 760604036}
-  - component: {fileID: 760604038}
-  - component: {fileID: 760604037}
-  m_Layer: 6
-  m_Name: EndPoint.1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &760604036
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 760604035}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.70710677, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.5, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 200189676}
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!135 &760604037
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 760604035}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &760604038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 760604035}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c463df61b3a6d648a27aeb5b75870f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trackID: 32
-  _connectedEndPoints:
-  - {fileID: 1835127973}
-  _closestCheckRadius: 0.15
-  _isTurn: 1
 --- !u!1 &768270113
 GameObject:
   m_ObjectHideFlags: 0
@@ -20123,7 +19923,6 @@ MonoBehaviour:
   trackID: 81
   _connectedEndPoints:
   - {fileID: 1796583656}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &768270115
 SphereCollider:
@@ -20230,7 +20029,6 @@ MonoBehaviour:
   trackID: 2
   _connectedEndPoints:
   - {fileID: 853506925}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &770182018
 GameObject:
@@ -20403,7 +20201,6 @@ MonoBehaviour:
   trackID: 12
   _connectedEndPoints:
   - {fileID: 465752471}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &775459268
 SphereCollider:
@@ -20474,7 +20271,6 @@ MonoBehaviour:
   trackID: 43
   _connectedEndPoints:
   - {fileID: 1280323497}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &778099526
 SphereCollider:
@@ -21245,7 +21041,6 @@ MonoBehaviour:
   trackID: 34
   _connectedEndPoints:
   - {fileID: 2072146173}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &823318553
 SphereCollider:
@@ -21400,7 +21195,6 @@ MonoBehaviour:
   _connectedEndPoints:
   - {fileID: 2139092429}
   - {fileID: 616825693}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &826602686
 SphereCollider:
@@ -21863,7 +21657,6 @@ MonoBehaviour:
   trackID: 41
   _connectedEndPoints:
   - {fileID: 314974112}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &840797271
 GameObject:
@@ -21934,7 +21727,6 @@ MonoBehaviour:
   trackID: 74
   _connectedEndPoints:
   - {fileID: 1175206222}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &842255298
 GameObject:
@@ -22259,7 +22051,6 @@ MonoBehaviour:
   trackID: 83
   _connectedEndPoints:
   - {fileID: 1291221732}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &847218389
 GameObject:
@@ -22429,7 +22220,6 @@ MonoBehaviour:
   trackID: 2
   _connectedEndPoints:
   - {fileID: 769789558}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &853506926
 SphereCollider:
@@ -22799,7 +22589,6 @@ MonoBehaviour:
   trackID: 25
   _connectedEndPoints:
   - {fileID: 303727886}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &887842558
 SphereCollider:
@@ -23060,7 +22849,6 @@ MonoBehaviour:
   _connectedEndPoints:
   - {fileID: 2116505961}
   - {fileID: 933159323}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &894650416
 SphereCollider:
@@ -23252,7 +23040,6 @@ MonoBehaviour:
   trackID: 56
   _connectedEndPoints:
   - {fileID: 285411122}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &904162679
 GameObject:
@@ -23569,7 +23356,6 @@ MonoBehaviour:
   trackID: 15
   _connectedEndPoints:
   - {fileID: 615438495}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &917784306
 SphereCollider:
@@ -23715,6 +23501,59 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 918356647}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &919582371
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 919582372}
+  - component: {fileID: 919582373}
+  m_Layer: 6
+  m_Name: RailSpurTrack(Clone).1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &919582372
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919582371}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.7071065, z: -0, w: 0.7071072}
+  m_LocalPosition: {x: 3, y: 0.25, z: 2.000001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1280428221}
+  - {fileID: 228051604}
+  m_Father: {fileID: 2107380238}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &919582373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919582371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f402a804cf034dd4cb19a6f93947092e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: 42
+  _trackPoints:
+  - {fileID: 1326322135}
+  - {fileID: 546042439}
+  - {fileID: 536192261}
+  _rotationDuration: 0.5
+  IsAligned: 1
 --- !u!1 &924186653
 GameObject:
   m_ObjectHideFlags: 0
@@ -23784,7 +23623,6 @@ MonoBehaviour:
   trackID: 73
   _connectedEndPoints:
   - {fileID: 1020544100}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &925090187
 GameObject:
@@ -23819,7 +23657,6 @@ MonoBehaviour:
   trackID: 0
   _connectedEndPoints:
   - {fileID: 1726204092}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &925090189
 SphereCollider:
@@ -24006,7 +23843,6 @@ MonoBehaviour:
   trackID: 57
   _connectedEndPoints:
   - {fileID: 894650415}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &933159324
 SphereCollider:
@@ -24555,7 +24391,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 947356071}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: 0.70710677, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 3, y: 0.25, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -24563,7 +24399,7 @@ Transform:
   - {fileID: 1259162355}
   - {fileID: 1633281357}
   m_Father: {fileID: 2107380238}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &947356073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24698,7 +24534,6 @@ MonoBehaviour:
   trackID: 31
   _connectedEndPoints:
   - {fileID: 1065315639}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &953119632
 SphereCollider:
@@ -24805,7 +24640,6 @@ MonoBehaviour:
   trackID: 47
   _connectedEndPoints:
   - {fileID: 17175717}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &965283364
 GameObject:
@@ -25371,7 +25205,6 @@ MonoBehaviour:
   trackID: 54
   _connectedEndPoints:
   - {fileID: 1910540890}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &980182766
 GameObject:
@@ -25489,7 +25322,6 @@ MonoBehaviour:
   trackID: 45
   _connectedEndPoints:
   - {fileID: 2129059785}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &982496256
 SphereCollider:
@@ -25840,7 +25672,6 @@ MonoBehaviour:
   trackID: 1
   _connectedEndPoints:
   - {fileID: 439273743}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &1007037551
 GameObject:
@@ -25911,7 +25742,6 @@ MonoBehaviour:
   trackID: 27
   _connectedEndPoints:
   - {fileID: 1797054484}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1012396840
 GameObject:
@@ -26112,7 +25942,6 @@ MonoBehaviour:
   trackID: 79
   _connectedEndPoints:
   - {fileID: 1150092553}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1018854299
 SphereCollider:
@@ -26235,7 +26064,6 @@ MonoBehaviour:
   trackID: 73
   _connectedEndPoints:
   - {fileID: 924186656}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1020544101
 SphereCollider:
@@ -26429,7 +26257,6 @@ MonoBehaviour:
   trackID: 93
   _connectedEndPoints:
   - {fileID: 101030642}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1031847367
 GameObject:
@@ -26668,7 +26495,6 @@ MonoBehaviour:
   trackID: 46
   _connectedEndPoints:
   - {fileID: 1127944329}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &1037079594
 GameObject:
@@ -26703,7 +26529,6 @@ MonoBehaviour:
   trackID: 10
   _connectedEndPoints:
   - {fileID: 1462712416}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &1037079596
 SphereCollider:
@@ -26863,7 +26688,6 @@ MonoBehaviour:
   trackID: 29
   _connectedEndPoints:
   - {fileID: 1774599849}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &1041673156
 GameObject:
@@ -26898,7 +26722,6 @@ MonoBehaviour:
   trackID: 51
   _connectedEndPoints:
   - {fileID: 1869579239}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1041673158
 SphereCollider:
@@ -26969,7 +26792,6 @@ MonoBehaviour:
   trackID: 45
   _connectedEndPoints:
   - {fileID: 689490640}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1043407026
 SphereCollider:
@@ -27040,7 +26862,6 @@ MonoBehaviour:
   trackID: 40
   _connectedEndPoints:
   - {fileID: 1632680812}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1045461880
 SphereCollider:
@@ -27111,7 +26932,6 @@ MonoBehaviour:
   trackID: 56
   _connectedEndPoints:
   - {fileID: 2034547157}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1050468381
 SphereCollider:
@@ -27451,7 +27271,6 @@ MonoBehaviour:
   _connectedEndPoints:
   - {fileID: 341151365}
   - {fileID: 1897688993}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &1057218792
 SphereCollider:
@@ -27643,7 +27462,6 @@ MonoBehaviour:
   trackID: 31
   _connectedEndPoints:
   - {fileID: 953119631}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &1066363998
 GameObject:
@@ -27945,6 +27763,89 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1072347856}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1073263510
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1073263511}
+  - component: {fileID: 1073263513}
+  - component: {fileID: 1073263512}
+  m_Layer: 6
+  m_Name: Rail.2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1073263511
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073263510}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.38268322, z: -0, w: 0.9238797}
+  m_LocalPosition: {x: -0.195, y: 0.55, z: -0.185}
+  m_LocalScale: {x: 0.53537434, y: 0.1, z: 0.32865}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1280428221}
+  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
+--- !u!23 &1073263512
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073263510}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 1199e6751dc75914aa0fbdb24e84d579, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1073263513
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073263510}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1074012433
 GameObject:
@@ -28287,8 +28188,90 @@ MonoBehaviour:
   trackID: 58
   _connectedEndPoints:
   - {fileID: 69319966}
-  _closestCheckRadius: 0.15
   _isTurn: 0
+--- !u!1 &1084125165
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1084125166}
+  - component: {fileID: 1084125168}
+  - component: {fileID: 1084125167}
+  m_Layer: 6
+  m_Name: Rail.1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1084125166
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084125165}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0.55, z: 0}
+  m_LocalScale: {x: 1, y: 0.1, z: 0.25}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1280428221}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!23 &1084125167
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084125165}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 1199e6751dc75914aa0fbdb24e84d579, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1084125168
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084125165}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1084915648
 GameObject:
   m_ObjectHideFlags: 0
@@ -28358,7 +28341,6 @@ MonoBehaviour:
   trackID: 5
   _connectedEndPoints:
   - {fileID: 1557106012}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &1085558507
 GameObject:
@@ -28429,7 +28411,6 @@ MonoBehaviour:
   trackID: 99
   _connectedEndPoints:
   - {fileID: 1531103474}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1086577207
 GameObject:
@@ -28704,58 +28685,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1093758320}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1096307210
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1096307211}
-  - component: {fileID: 1096307212}
-  m_Layer: 6
-  m_Name: StraightTrack(Clone)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1096307211
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1096307210}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3, y: 0.25, z: 2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 578774550}
-  - {fileID: 200189676}
-  m_Father: {fileID: 2107380238}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1096307212
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1096307210}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f402a804cf034dd4cb19a6f93947092e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 32
-  _trackPoints:
-  - {fileID: 1835127973}
-  - {fileID: 760604038}
-  _rotationDuration: 0.5
-  IsAligned: 1
 --- !u!1 &1101924956
 GameObject:
   m_ObjectHideFlags: 0
@@ -28789,7 +28718,6 @@ MonoBehaviour:
   trackID: 98
   _connectedEndPoints:
   - {fileID: 1582017754}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1101924958
 SphereCollider:
@@ -28860,7 +28788,6 @@ MonoBehaviour:
   trackID: 7
   _connectedEndPoints:
   - {fileID: 2064665137}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &1102012134
 SphereCollider:
@@ -28931,7 +28858,6 @@ MonoBehaviour:
   trackID: 70
   _connectedEndPoints:
   - {fileID: 1526427049}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1103476441
 SphereCollider:
@@ -29038,7 +28964,6 @@ MonoBehaviour:
   trackID: 28
   _connectedEndPoints:
   - {fileID: 2009242837}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &1103963615
 GameObject:
@@ -29127,7 +29052,6 @@ MonoBehaviour:
   trackID: 17
   _connectedEndPoints:
   - {fileID: 644555611}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1112620513
 SphereCollider:
@@ -29456,7 +29380,6 @@ MonoBehaviour:
   _connectedEndPoints:
   - {fileID: 1036263246}
   - {fileID: 1650748937}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &1127944330
 SphereCollider:
@@ -29812,7 +29735,6 @@ MonoBehaviour:
   trackID: 53
   _connectedEndPoints:
   - {fileID: 1165637147}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &1141061426
 GameObject:
@@ -29982,7 +29904,6 @@ MonoBehaviour:
   trackID: 86
   _connectedEndPoints:
   - {fileID: 116878108}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1146334438
 SphereCollider:
@@ -30172,7 +30093,6 @@ MonoBehaviour:
   trackID: 79
   _connectedEndPoints:
   - {fileID: 1018854298}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1150869145
 GameObject:
@@ -30411,7 +30331,6 @@ MonoBehaviour:
   trackID: 20
   _connectedEndPoints:
   - {fileID: 175463240}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &1160998335
 GameObject:
@@ -30534,7 +30453,6 @@ MonoBehaviour:
   trackID: 18
   _connectedEndPoints:
   - {fileID: 2020718089}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1163159393
 GameObject:
@@ -30604,7 +30522,6 @@ MonoBehaviour:
   trackID: 53
   _connectedEndPoints:
   - {fileID: 1139689266}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &1165637148
 SphereCollider:
@@ -30709,7 +30626,6 @@ MonoBehaviour:
   _connectedEndPoints:
   - {fileID: 840797274}
   - {fileID: 737577542}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &1175206223
 SphereCollider:
@@ -30816,7 +30732,6 @@ MonoBehaviour:
   trackID: 91
   _connectedEndPoints:
   - {fileID: 1750931266}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1183799163
 GameObject:
@@ -30887,7 +30802,6 @@ MonoBehaviour:
   trackID: 84
   _connectedEndPoints:
   - {fileID: 2111865433}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &1184802717
 GameObject:
@@ -30922,7 +30836,6 @@ MonoBehaviour:
   trackID: 36
   _connectedEndPoints:
   - {fileID: 1771224058}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1184802719
 SphereCollider:
@@ -31029,7 +30942,6 @@ MonoBehaviour:
   trackID: 88
   _connectedEndPoints:
   - {fileID: 1386827517}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1191850643
 GameObject:
@@ -31098,7 +31010,6 @@ MonoBehaviour:
   trackID: 37
   _connectedEndPoints:
   - {fileID: 552581713}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1192964668
 SphereCollider:
@@ -31363,7 +31274,6 @@ MonoBehaviour:
   trackID: 38
   _connectedEndPoints:
   - {fileID: 1886002652}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &1215160289
 GameObject:
@@ -31519,7 +31429,6 @@ MonoBehaviour:
   trackID: 35
   _connectedEndPoints:
   - {fileID: 1284944088}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1222982686
 GameObject:
@@ -31842,7 +31751,6 @@ MonoBehaviour:
   trackID: 13
   _connectedEndPoints:
   - {fileID: 2083064891}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1236716077
 SphereCollider:
@@ -32079,7 +31987,6 @@ MonoBehaviour:
   trackID: 1
   _connectedEndPoints:
   - {fileID: 439273743}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1242429431
 SphereCollider:
@@ -32635,7 +32542,6 @@ MonoBehaviour:
   trackID: 71
   _connectedEndPoints:
   - {fileID: 1608960691}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &1254738932
 GameObject:
@@ -32670,7 +32576,6 @@ MonoBehaviour:
   trackID: 68
   _connectedEndPoints:
   - {fileID: 1810750138}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1254738934
 SphereCollider:
@@ -32885,7 +32790,6 @@ MonoBehaviour:
   trackID: 8
   _connectedEndPoints:
   - {fileID: 484124641}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &1261196995
 GameObject:
@@ -32920,7 +32824,6 @@ MonoBehaviour:
   trackID: 55
   _connectedEndPoints:
   - {fileID: 1765464896}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1261196997
 SphereCollider:
@@ -33027,7 +32930,6 @@ MonoBehaviour:
   _connectedEndPoints:
   - {fileID: 1410758470}
   - {fileID: 43790977}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &1271157926
 SphereCollider:
@@ -33469,7 +33371,6 @@ MonoBehaviour:
   trackID: 59
   _connectedEndPoints:
   - {fileID: 16963911}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &1280323496
 GameObject:
@@ -33505,7 +33406,6 @@ MonoBehaviour:
   _connectedEndPoints:
   - {fileID: 435041727}
   - {fileID: 778099525}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &1280323498
 SphereCollider:
@@ -33543,6 +33443,114 @@ Transform:
   m_Children: []
   m_Father: {fileID: 287586661}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1280428220
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1280428221}
+  - component: {fileID: 1280428224}
+  - component: {fileID: 1280428223}
+  - component: {fileID: 1280428222}
+  m_Layer: 6
+  m_Name: Model
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1280428221
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280428220}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.95, y: 0.5, z: 0.95}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2141275786}
+  - {fileID: 1084125166}
+  - {fileID: 1073263511}
+  m_Father: {fileID: 919582372}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1280428222
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280428220}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1280428223
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280428220}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 640d7f7bd39da0e4890a38dfc17840af, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1280428224
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280428220}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1281084011
 GameObject:
   m_ObjectHideFlags: 0
@@ -33766,7 +33774,6 @@ MonoBehaviour:
   trackID: 35
   _connectedEndPoints:
   - {fileID: 1218259610}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1284944089
 SphereCollider:
@@ -33920,7 +33927,6 @@ MonoBehaviour:
   trackID: 83
   _connectedEndPoints:
   - {fileID: 844498152}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &1291221733
 SphereCollider:
@@ -34027,7 +34033,6 @@ MonoBehaviour:
   trackID: 27
   _connectedEndPoints:
   - {fileID: 1917796184}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1297926696
 GameObject:
@@ -34249,7 +34254,6 @@ MonoBehaviour:
   trackID: 3
   _connectedEndPoints:
   - {fileID: 1488273926}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1321681900
 GameObject:
@@ -34403,8 +34407,78 @@ MonoBehaviour:
   trackID: 99
   _connectedEndPoints:
   - {fileID: 718172034}
-  _closestCheckRadius: 0.15
   _isTurn: 1
+--- !u!1 &1326322134
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1326322137}
+  - component: {fileID: 1326322135}
+  - component: {fileID: 1326322136}
+  m_Layer: 6
+  m_Name: EndPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1326322135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326322134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c463df61b3a6d648a27aeb5b75870f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trackID: 42
+  _connectedEndPoints:
+  - {fileID: 536192261}
+  - {fileID: 546042439}
+  _isTurn: 0
+--- !u!135 &1326322136
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326322134}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1326322137
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326322134}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 228051604}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1331284431
 GameObject:
   m_ObjectHideFlags: 0
@@ -34438,7 +34512,6 @@ MonoBehaviour:
   trackID: 72
   _connectedEndPoints:
   - {fileID: 1473418085}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1331284433
 SphereCollider:
@@ -34592,7 +34665,6 @@ MonoBehaviour:
   trackID: 77
   _connectedEndPoints:
   - {fileID: 632924626}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1333939086
 SphereCollider:
@@ -34663,7 +34735,6 @@ MonoBehaviour:
   trackID: 93
   _connectedEndPoints:
   - {fileID: 2014161098}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1350926262
 SphereCollider:
@@ -35577,7 +35648,6 @@ MonoBehaviour:
   trackID: 88
   _connectedEndPoints:
   - {fileID: 1190603482}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1386827518
 SphereCollider:
@@ -35875,7 +35945,6 @@ MonoBehaviour:
   trackID: 9
   _connectedEndPoints:
   - {fileID: 451433573}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1393493788
 GameObject:
@@ -35910,7 +35979,6 @@ MonoBehaviour:
   trackID: 33
   _connectedEndPoints:
   - {fileID: 251200127}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1393493790
 SphereCollider:
@@ -36125,7 +36193,6 @@ MonoBehaviour:
   trackID: 52
   _connectedEndPoints:
   - {fileID: 1809833531}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1409617359
 GameObject:
@@ -36366,7 +36433,6 @@ MonoBehaviour:
   trackID: 39
   _connectedEndPoints:
   - {fileID: 1271157925}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &1412948148
 GameObject:
@@ -36437,7 +36503,6 @@ MonoBehaviour:
   trackID: 87
   _connectedEndPoints:
   - {fileID: 473208556}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1414429117
 GameObject:
@@ -36508,7 +36573,6 @@ MonoBehaviour:
   trackID: 12
   _connectedEndPoints:
   - {fileID: 456193869}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1418385575
 GameObject:
@@ -36803,7 +36867,6 @@ MonoBehaviour:
   trackID: 49
   _connectedEndPoints:
   - {fileID: 1786204284}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &1427237139
 GameObject:
@@ -37125,7 +37188,6 @@ MonoBehaviour:
   trackID: 11
   _connectedEndPoints:
   - {fileID: 1630482731}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1438816080
 GameObject:
@@ -37160,7 +37222,6 @@ MonoBehaviour:
   trackID: 23
   _connectedEndPoints:
   - {fileID: 145071060}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1438816082
 SphereCollider:
@@ -37330,7 +37391,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1443003445}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.00000058114523}
+  m_LocalRotation: {x: -0, y: -0.70710677, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 1, y: 0.25, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -37338,7 +37399,7 @@ Transform:
   - {fileID: 389429729}
   - {fileID: 590856784}
   m_Father: {fileID: 2107380238}
-  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!114 &1443003447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37390,7 +37451,6 @@ MonoBehaviour:
   trackID: 36
   _connectedEndPoints:
   - {fileID: 79749441}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1448090076
 SphereCollider:
@@ -37461,7 +37521,6 @@ MonoBehaviour:
   trackID: 75
   _connectedEndPoints:
   - {fileID: 1572988791}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &1448222356
 SphereCollider:
@@ -37532,7 +37591,6 @@ MonoBehaviour:
   trackID: 77
   _connectedEndPoints:
   - {fileID: 2047092554}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1449450645
 SphereCollider:
@@ -37833,7 +37891,6 @@ MonoBehaviour:
   trackID: 10
   _connectedEndPoints:
   - {fileID: 1037079595}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &1464994216
 GameObject:
@@ -37957,7 +38014,6 @@ MonoBehaviour:
   trackID: 64
   _connectedEndPoints:
   - {fileID: 737816552}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1473418082
 GameObject:
@@ -38028,7 +38084,6 @@ MonoBehaviour:
   trackID: 72
   _connectedEndPoints:
   - {fileID: 1331284432}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1480457513
 GameObject:
@@ -38393,7 +38448,6 @@ MonoBehaviour:
   trackID: 3
   _connectedEndPoints:
   - {fileID: 1318279598}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1488273927
 SphereCollider:
@@ -38500,7 +38554,6 @@ MonoBehaviour:
   trackID: 96
   _connectedEndPoints:
   - {fileID: 2126585911}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1489465632
 GameObject:
@@ -38535,7 +38588,6 @@ MonoBehaviour:
   trackID: 70
   _connectedEndPoints:
   - {fileID: 514100020}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1489465634
 SphereCollider:
@@ -38642,7 +38694,6 @@ MonoBehaviour:
   trackID: 98
   _connectedEndPoints:
   - {fileID: 1761084726}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1494161664
 GameObject:
@@ -38713,7 +38764,6 @@ MonoBehaviour:
   trackID: 62
   _connectedEndPoints:
   - {fileID: 1712414051}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1497439648
 GameObject:
@@ -38749,7 +38799,6 @@ MonoBehaviour:
   _connectedEndPoints:
   - {fileID: 385783456}
   - {fileID: 1730711603}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &1497439650
 SphereCollider:
@@ -38939,7 +38988,6 @@ MonoBehaviour:
   trackID: 24
   _connectedEndPoints:
   - {fileID: 1990050248}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1500259811
 GameObject:
@@ -39646,7 +39694,6 @@ MonoBehaviour:
   trackID: 70
   _connectedEndPoints:
   - {fileID: 1103476440}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1526834970
 GameObject:
@@ -39714,7 +39761,6 @@ MonoBehaviour:
   trackID: 99
   _connectedEndPoints:
   - {fileID: 1085558510}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1531103475
 SphereCollider:
@@ -39922,7 +39968,6 @@ MonoBehaviour:
   trackID: 78
   _connectedEndPoints:
   - {fileID: 1607379077}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &1542301365
 SphereCollider:
@@ -40290,7 +40335,6 @@ MonoBehaviour:
   _connectedEndPoints:
   - {fileID: 1084915651}
   - {fileID: 558808584}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &1557106013
 SphereCollider:
@@ -40629,7 +40673,6 @@ MonoBehaviour:
   trackID: 75
   _connectedEndPoints:
   - {fileID: 1448222355}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &1574784129
 GameObject:
@@ -40866,7 +40909,6 @@ MonoBehaviour:
   trackID: 98
   _connectedEndPoints:
   - {fileID: 1101924957}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1587670093
 GameObject:
@@ -40971,7 +41013,6 @@ MonoBehaviour:
   trackID: 11
   _connectedEndPoints:
   - {fileID: 191382017}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1590949838
 GameObject:
@@ -41207,7 +41248,6 @@ MonoBehaviour:
   trackID: 80
   _connectedEndPoints:
   - {fileID: 1968044033}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1604492374
 SphereCollider:
@@ -41314,7 +41354,6 @@ MonoBehaviour:
   trackID: 78
   _connectedEndPoints:
   - {fileID: 1542301364}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &1607458338
 GameObject:
@@ -41456,7 +41495,6 @@ MonoBehaviour:
   _connectedEndPoints:
   - {fileID: 1253215302}
   - {fileID: 2130257282}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &1608960692
 SphereCollider:
@@ -41563,7 +41601,6 @@ MonoBehaviour:
   trackID: 94
   _connectedEndPoints:
   - {fileID: 174895715}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &1616359312
 GameObject:
@@ -41980,7 +42017,6 @@ MonoBehaviour:
   trackID: 11
   _connectedEndPoints:
   - {fileID: 1438495564}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1630482732
 SphereCollider:
@@ -42170,7 +42206,6 @@ MonoBehaviour:
   trackID: 40
   _connectedEndPoints:
   - {fileID: 1045461879}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1633047941
 GameObject:
@@ -42293,7 +42328,6 @@ MonoBehaviour:
   _connectedEndPoints:
   - {fileID: 417168544}
   - {fileID: 344224876}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &1636222058
 SphereCollider:
@@ -42729,7 +42763,6 @@ MonoBehaviour:
   trackID: 23
   _connectedEndPoints:
   - {fileID: 383872210}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1650720264
 GameObject:
@@ -42800,7 +42833,6 @@ MonoBehaviour:
   trackID: 26
   _connectedEndPoints:
   - {fileID: 1892682849}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1650748936
 GameObject:
@@ -42835,7 +42867,6 @@ MonoBehaviour:
   trackID: 46
   _connectedEndPoints:
   - {fileID: 1127944329}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1650748938
 SphereCollider:
@@ -42906,7 +42937,6 @@ MonoBehaviour:
   trackID: 35
   _connectedEndPoints:
   - {fileID: 1949426428}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1651323163
 SphereCollider:
@@ -42977,7 +43007,6 @@ MonoBehaviour:
   trackID: 50
   _connectedEndPoints:
   - {fileID: 1962736192}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &1652219986
 SphereCollider:
@@ -43131,7 +43160,6 @@ MonoBehaviour:
   trackID: 92
   _connectedEndPoints:
   - {fileID: 1711314627}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &1653788721
 SphereCollider:
@@ -43338,7 +43366,6 @@ MonoBehaviour:
   trackID: 80
   _connectedEndPoints:
   - {fileID: 320480322}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1669403490
 SphereCollider:
@@ -43800,7 +43827,6 @@ MonoBehaviour:
   trackID: 90
   _connectedEndPoints:
   - {fileID: 2050235070}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1689430022
 GameObject:
@@ -43871,7 +43897,6 @@ MonoBehaviour:
   trackID: 65
   _connectedEndPoints:
   - {fileID: 1959491104}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1691919651
 GameObject:
@@ -44318,7 +44343,6 @@ MonoBehaviour:
   _connectedEndPoints:
   - {fileID: 666870509}
   - {fileID: 1870710394}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &1700777249
 SphereCollider:
@@ -44994,7 +45018,6 @@ MonoBehaviour:
   trackID: 92
   _connectedEndPoints:
   - {fileID: 1653788720}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &1711317951
 GameObject:
@@ -45029,7 +45052,6 @@ MonoBehaviour:
   trackID: 94
   _connectedEndPoints:
   - {fileID: 174895715}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1711317953
 SphereCollider:
@@ -45183,7 +45205,6 @@ MonoBehaviour:
   trackID: 62
   _connectedEndPoints:
   - {fileID: 1494161667}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1712414052
 SphereCollider:
@@ -45342,7 +45363,6 @@ MonoBehaviour:
   trackID: 16
   _connectedEndPoints:
   - {fileID: 620644784}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1718909332
 GameObject:
@@ -45881,7 +45901,6 @@ MonoBehaviour:
   trackID: 0
   _connectedEndPoints:
   - {fileID: 925090188}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1729098628
 GameObject:
@@ -46082,7 +46101,6 @@ MonoBehaviour:
   trackID: 42
   _connectedEndPoints:
   - {fileID: 1497439649}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1730711604
 SphereCollider:
@@ -46627,7 +46645,6 @@ MonoBehaviour:
   trackID: 89
   _connectedEndPoints:
   - {fileID: 623778367}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &1750931265
 GameObject:
@@ -46662,7 +46679,6 @@ MonoBehaviour:
   trackID: 91
   _connectedEndPoints:
   - {fileID: 1178526368}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1750931267
 SphereCollider:
@@ -47274,7 +47290,6 @@ MonoBehaviour:
   trackID: 98
   _connectedEndPoints:
   - {fileID: 1493174060}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1761084727
 SphereCollider:
@@ -47346,7 +47361,6 @@ MonoBehaviour:
   _connectedEndPoints:
   - {fileID: 2130825051}
   - {fileID: 589627411}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &1761489454
 SphereCollider:
@@ -47525,7 +47539,6 @@ MonoBehaviour:
   _connectedEndPoints:
   - {fileID: 494597081}
   - {fileID: 1261196996}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &1765464897
 SphereCollider:
@@ -47738,7 +47751,6 @@ MonoBehaviour:
   trackID: 36
   _connectedEndPoints:
   - {fileID: 1184802718}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1774599848
 GameObject:
@@ -47773,7 +47785,6 @@ MonoBehaviour:
   trackID: 29
   _connectedEndPoints:
   - {fileID: 1039546848}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &1774599850
 SphereCollider:
@@ -48226,7 +48237,6 @@ MonoBehaviour:
   trackID: 49
   _connectedEndPoints:
   - {fileID: 1424970678}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &1786204285
 SphereCollider:
@@ -48297,7 +48307,6 @@ MonoBehaviour:
   trackID: 60
   _connectedEndPoints:
   - {fileID: 171873728}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1786250709
 SphereCollider:
@@ -48457,7 +48466,6 @@ MonoBehaviour:
   trackID: 81
   _connectedEndPoints:
   - {fileID: 768270114}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1797054483
 GameObject:
@@ -48492,7 +48500,6 @@ MonoBehaviour:
   trackID: 27
   _connectedEndPoints:
   - {fileID: 1007037554}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1797054485
 SphereCollider:
@@ -48596,7 +48603,6 @@ MonoBehaviour:
   trackID: 52
   _connectedEndPoints:
   - {fileID: 181638249}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1807626374
 SphereCollider:
@@ -48702,7 +48708,6 @@ MonoBehaviour:
   trackID: 52
   _connectedEndPoints:
   - {fileID: 1405788780}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1809833532
 SphereCollider:
@@ -48809,7 +48814,6 @@ MonoBehaviour:
   trackID: 68
   _connectedEndPoints:
   - {fileID: 1254738933}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1812593178
 GameObject:
@@ -49214,7 +49218,6 @@ MonoBehaviour:
   trackID: 13
   _connectedEndPoints:
   - {fileID: 2119237617}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1827308254
 GameObject:
@@ -49285,7 +49288,6 @@ MonoBehaviour:
   trackID: 6
   _connectedEndPoints:
   - {fileID: 1853578966}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1829793628
 GameObject:
@@ -49453,77 +49455,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1832244256}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1835127972
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1835127975}
-  - component: {fileID: 1835127973}
-  - component: {fileID: 1835127974}
-  m_Layer: 6
-  m_Name: EndPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1835127973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1835127972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c463df61b3a6d648a27aeb5b75870f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trackID: 32
-  _connectedEndPoints:
-  - {fileID: 760604038}
-  _closestCheckRadius: 0.15
-  _isTurn: 1
---- !u!135 &1835127974
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1835127972}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!4 &1835127975
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1835127972}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.70710707, z: -0, w: 0.70710653}
-  m_LocalPosition: {x: -0.5, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 200189676}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1836968791
 GameObject:
   m_ObjectHideFlags: 0
@@ -49593,7 +49524,6 @@ MonoBehaviour:
   trackID: 4
   _connectedEndPoints:
   - {fileID: 477372659}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1837660347
 GameObject:
@@ -49853,7 +49783,6 @@ MonoBehaviour:
   trackID: 6
   _connectedEndPoints:
   - {fileID: 1827308257}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1853578967
 SphereCollider:
@@ -50043,7 +49972,6 @@ MonoBehaviour:
   trackID: 51
   _connectedEndPoints:
   - {fileID: 1041673157}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1870710393
 GameObject:
@@ -50078,7 +50006,6 @@ MonoBehaviour:
   trackID: 76
   _connectedEndPoints:
   - {fileID: 1700777248}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1870710395
 SphereCollider:
@@ -50504,7 +50431,6 @@ MonoBehaviour:
   trackID: 38
   _connectedEndPoints:
   - {fileID: 1200200248}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &1886002653
 SphereCollider:
@@ -50789,7 +50715,6 @@ MonoBehaviour:
   trackID: 26
   _connectedEndPoints:
   - {fileID: 1650720267}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1892682850
 SphereCollider:
@@ -50914,7 +50839,6 @@ MonoBehaviour:
   trackID: 44
   _connectedEndPoints:
   - {fileID: 1057218791}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1897688994
 SphereCollider:
@@ -51068,7 +50992,6 @@ MonoBehaviour:
   trackID: 54
   _connectedEndPoints:
   - {fileID: 979948444}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &1910540891
 SphereCollider:
@@ -51175,7 +51098,6 @@ MonoBehaviour:
   trackID: 97
   _connectedEndPoints:
   - {fileID: 726843919}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1917796183
 GameObject:
@@ -51210,7 +51132,6 @@ MonoBehaviour:
   trackID: 27
   _connectedEndPoints:
   - {fileID: 1292568316}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1917796185
 SphereCollider:
@@ -51741,7 +51662,6 @@ MonoBehaviour:
   trackID: 35
   _connectedEndPoints:
   - {fileID: 1651323162}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1955423770
 GameObject:
@@ -52109,7 +52029,6 @@ MonoBehaviour:
   trackID: 91
   _connectedEndPoints:
   - {fileID: 612239182}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1959491103
 GameObject:
@@ -52144,7 +52063,6 @@ MonoBehaviour:
   trackID: 65
   _connectedEndPoints:
   - {fileID: 1689430025}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1959491105
 SphereCollider:
@@ -52334,7 +52252,6 @@ MonoBehaviour:
   trackID: 50
   _connectedEndPoints:
   - {fileID: 1652219985}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &1962746332
 GameObject:
@@ -52619,7 +52536,6 @@ MonoBehaviour:
   trackID: 80
   _connectedEndPoints:
   - {fileID: 1604492373}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &1974559043
 GameObject:
@@ -52654,7 +52570,6 @@ MonoBehaviour:
   trackID: 21
   _connectedEndPoints:
   - {fileID: 252547296}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &1974559045
 SphereCollider:
@@ -52808,7 +52723,6 @@ MonoBehaviour:
   trackID: 24
   _connectedEndPoints:
   - {fileID: 1498740501}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &1990050249
 SphereCollider:
@@ -52995,6 +52909,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _folowerMaxSpeed: 2
   _timeBeforeFullSpeed: 1.5
+  _closestCheckRadius: 0.25
   _derailAnimationTime: 0.5
   _currentTrack: {fileID: 0}
 --- !u!4 &2002959373
@@ -53130,7 +53045,6 @@ MonoBehaviour:
   _connectedEndPoints:
   - {fileID: 1103557405}
   - {fileID: 704817619}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &2009242838
 SphereCollider:
@@ -53237,7 +53151,6 @@ MonoBehaviour:
   trackID: 93
   _connectedEndPoints:
   - {fileID: 1350926261}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &2018867441
 GameObject:
@@ -53416,7 +53329,6 @@ MonoBehaviour:
   trackID: 85
   _connectedEndPoints:
   - {fileID: 402818520}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &2020718088
 GameObject:
@@ -53451,7 +53363,6 @@ MonoBehaviour:
   trackID: 18
   _connectedEndPoints:
   - {fileID: 1161825888}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &2020718090
 SphereCollider:
@@ -53522,7 +53433,6 @@ MonoBehaviour:
   trackID: 14
   _connectedEndPoints:
   - {fileID: 130485168}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &2022451208
 SphereCollider:
@@ -53853,7 +53763,6 @@ MonoBehaviour:
   trackID: 56
   _connectedEndPoints:
   - {fileID: 1050468380}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &2036212077
 GameObject:
@@ -54029,7 +53938,6 @@ MonoBehaviour:
   trackID: 30
   _connectedEndPoints:
   - {fileID: 422622396}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &2038713256
 SphereCollider:
@@ -54360,7 +54268,6 @@ MonoBehaviour:
   trackID: 77
   _connectedEndPoints:
   - {fileID: 1449450644}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &2048071247
 GameObject:
@@ -54561,7 +54468,6 @@ MonoBehaviour:
   trackID: 90
   _connectedEndPoints:
   - {fileID: 1688911420}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &2050235071
 SphereCollider:
@@ -54871,7 +54777,6 @@ MonoBehaviour:
   trackID: 7
   _connectedEndPoints:
   - {fileID: 1102012133}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &2064876128
 GameObject:
@@ -55058,7 +54963,6 @@ MonoBehaviour:
   trackID: 34
   _connectedEndPoints:
   - {fileID: 823318552}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &2078004982
 GameObject:
@@ -55147,7 +55051,6 @@ MonoBehaviour:
   trackID: 41
   _connectedEndPoints:
   - {fileID: 48492270}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &2081611403
 SphereCollider:
@@ -55254,7 +55157,6 @@ MonoBehaviour:
   trackID: 13
   _connectedEndPoints:
   - {fileID: 1236716076}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &2085472978
 GameObject:
@@ -55433,7 +55335,6 @@ MonoBehaviour:
   trackID: 37
   _connectedEndPoints:
   - {fileID: 584662617}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &2089394795
 GameObject:
@@ -55612,7 +55513,6 @@ MonoBehaviour:
   trackID: 62
   _connectedEndPoints:
   - {fileID: 314964873}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &2100889475
 GameObject:
@@ -55986,7 +55886,6 @@ Transform:
   - {fileID: 682498645}
   - {fileID: 462050343}
   - {fileID: 947356072}
-  - {fileID: 1096307211}
   - {fileID: 403073262}
   - {fileID: 1706458762}
   - {fileID: 578824531}
@@ -55997,6 +55896,7 @@ Transform:
   - {fileID: 1067399145}
   - {fileID: 505390825}
   - {fileID: 1089209132}
+  - {fileID: 919582372}
   - {fileID: 675301626}
   - {fileID: 681486049}
   - {fileID: 294596321}
@@ -56112,7 +56012,6 @@ MonoBehaviour:
   _connectedEndPoints:
   - {fileID: 1183799166}
   - {fileID: 699524815}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!135 &2111865434
 SphereCollider:
@@ -56219,7 +56118,6 @@ MonoBehaviour:
   trackID: 57
   _connectedEndPoints:
   - {fileID: 894650415}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &2116640878
 GameObject:
@@ -56288,7 +56186,6 @@ MonoBehaviour:
   trackID: 13
   _connectedEndPoints:
   - {fileID: 1825116244}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &2119237618
 SphereCollider:
@@ -56413,7 +56310,6 @@ MonoBehaviour:
   trackID: 96
   _connectedEndPoints:
   - {fileID: 1488618069}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &2126585912
 SphereCollider:
@@ -56638,7 +56534,6 @@ MonoBehaviour:
   trackID: 45
   _connectedEndPoints:
   - {fileID: 982496255}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!1 &2130216219
 GameObject:
@@ -56673,7 +56568,6 @@ MonoBehaviour:
   trackID: 2
   _connectedEndPoints:
   - {fileID: 729826745}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &2130216221
 SphereCollider:
@@ -56744,7 +56638,6 @@ MonoBehaviour:
   trackID: 71
   _connectedEndPoints:
   - {fileID: 1608960691}
-  _closestCheckRadius: 0.15
   _isTurn: 1
 --- !u!135 &2130257283
 SphereCollider:
@@ -56851,7 +56744,6 @@ MonoBehaviour:
   trackID: 69
   _connectedEndPoints:
   - {fileID: 1761489453}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &2134498695
 GameObject:
@@ -56957,7 +56849,6 @@ MonoBehaviour:
   trackID: 63
   _connectedEndPoints:
   - {fileID: 826602685}
-  _closestCheckRadius: 0.15
   _isTurn: 0
 --- !u!1 &2141241555
 GameObject:
@@ -56992,6 +56883,89 @@ Transform:
   - {fileID: 1190603480}
   m_Father: {fileID: 770182019}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2141275785
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2141275786}
+  - component: {fileID: 2141275788}
+  - component: {fileID: 2141275787}
+  m_Layer: 6
+  m_Name: Rail
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2141275786
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141275785}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.384, y: 0.55, z: 0}
+  m_LocalScale: {x: 0.21876962, y: 0.1, z: 0.25}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1280428221}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &2141275787
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141275785}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 1199e6751dc75914aa0fbdb24e84d579, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &2141275788
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141275785}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2141655077
 GameObject:
   m_ObjectHideFlags: 0

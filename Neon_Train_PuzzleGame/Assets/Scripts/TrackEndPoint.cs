@@ -65,6 +65,7 @@ public class TrackEndPoint : MonoBehaviour
         return (p1 - p2).normalized;
     }
 
+    [ContextMenu("Switch tracks")]
     public void SwitchTrack()
     {
         TrackEndPoint fst = _connectedEndPoints[0];
