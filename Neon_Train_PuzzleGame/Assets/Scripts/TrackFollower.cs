@@ -1,4 +1,6 @@
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class TrackFollower : MonoBehaviour
@@ -8,6 +10,7 @@ public class TrackFollower : MonoBehaviour
     [SerializeField] private float _timeBeforeFullSpeed = 0.5f;
     private float _currentSpeed = 0.0f;
     private float _accelTimer = 0.0f;
+    [SerializeField] private float _closestCheckRadius = 0.25f;
     [SerializeField] private float _derailAnimationTime = 0.5f;
 
     [Header("For Level Initializer")]
@@ -82,12 +85,14 @@ public class TrackFollower : MonoBehaviour
 
     private bool GetNextTrack()
     {
+        // MAKE THE GET NEXT TRACK FROM THE TRAIN AND NOT THE TILE
+
         // ask if the track is aligned 
         // if it is not, derail the train
         // if it is, ask Track the closest track endPoint
 
-        _startPoint = _endPoint.GetClosestEndPoint();
-        if (!_isRunning || !_currentTrack.IsAligned || _startPoint == null)
+        _startPoint = GetClosestEndPoint();
+        if (!_isRunning || !_currentTrack.IsAligned || _startPoint == null || !TrackManager.Instance.Tracks[_startPoint.trackID].IsAligned)
         {
             _isRunning = false;
             DerailTrain();
@@ -99,6 +104,21 @@ public class TrackFollower : MonoBehaviour
         _currentTrack = TrackManager.Instance.Tracks[_startPoint.trackID];
 
         return true;
+    }
+
+    public TrackEndPoint GetClosestEndPoint()
+    {
+        List<TrackEndPoint> closestEndPoints = Physics.OverlapSphere(transform.position, _closestCheckRadius).
+                                                        Select(c => c.GetComponent<TrackEndPoint>()).
+                                                        Where(c => c != null && c.trackID != _currentTrack.ID).
+                                                        OrderBy(c => Vector3.Distance(c.transform.position, transform.position)).
+                                                        ToList();
+        if (closestEndPoints.Count == 0)
+        {
+            return null;
+        }
+
+        return closestEndPoints[0];
     }
 
     private void DerailTrain()
@@ -118,14 +138,14 @@ public class TrackFollower : MonoBehaviour
         Quaternion startRotation = transform.rotation;
         Quaternion targetRotation = Quaternion.FromToRotation(originUp, derailDir) * transform.rotation;
 
-        float timer = 0.0f;
+        float elapsedTime = 0.0f;
 
-        while (timer < _derailAnimationTime)
+        while (elapsedTime < _derailAnimationTime)
         {
-            float t = timer / _derailAnimationTime;
+            float t = elapsedTime / _derailAnimationTime;
             transform.rotation = Quaternion.Lerp(startRotation, targetRotation, t);
 
-            timer += Time.deltaTime;
+            elapsedTime += Time.deltaTime;
             yield return null;
         }
 
@@ -134,5 +154,11 @@ public class TrackFollower : MonoBehaviour
         _isDerailing = false;
 
         this.enabled = false;
+    }
+
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, _closestCheckRadius);
     }
 }

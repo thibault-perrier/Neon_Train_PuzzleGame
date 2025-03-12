@@ -6,7 +6,6 @@ public class TrackEndPoint : MonoBehaviour
 {
     public int trackID;
     [SerializeField] private List<TrackEndPoint> _connectedEndPoints = new();
-    [SerializeField] private float _closestCheckRadius = 0.25f;
 
     public bool _isTurn = false;
     private TrackEndPoint _endPoint;
@@ -19,20 +18,6 @@ public class TrackEndPoint : MonoBehaviour
 
     }
 
-    public TrackEndPoint GetClosestEndPoint()
-    {
-        List<TrackEndPoint> closestEndPoints = Physics.OverlapSphere(transform.position, _closestCheckRadius).
-                                                        Select(c => c.GetComponent<TrackEndPoint>()).
-                                                        Where(c => c != null && c != this).
-                                                        ToList();
-        if (closestEndPoints.Count == 0)
-        {
-            return null;
-        }
-
-        return closestEndPoints.OrderBy(c => Vector3.Distance(c.transform.position, transform.position)).FirstOrDefault();
-    }
-
     public TrackEndPoint GetTrackEndPoint()
     {
         return _endPoint;
@@ -42,12 +27,6 @@ public class TrackEndPoint : MonoBehaviour
     {
         // 1 if in the same direction, 0 if perpendicular
         return Mathf.Abs(Vector3.Dot(transform.forward, _endPoint.transform.forward)) < 0.5f;
-    }
-
-    void OnDrawGizmos()
-    {
-        Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(transform.position, _closestCheckRadius);
     }
 
     public Vector3 EvaluatePosition(float t)
