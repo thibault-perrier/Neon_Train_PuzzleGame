@@ -114,20 +114,25 @@ public class TrackFollower : MonoBehaviour
     {
         _isDerailing = true;
 
-        Vector3 orginUp = transform.up;
-        float timer = _derailAnimationTime;
+        Vector3 originUp = transform.up;
+        Quaternion startRotation = transform.rotation;
+        Quaternion targetRotation = Quaternion.FromToRotation(originUp, derailDir) * transform.rotation;
 
-        while (timer > 0)
+        float timer = 0.0f;
+
+        while (timer < _derailAnimationTime)
         {
-            transform.up = Vector3.Lerp(derailDir, orginUp, timer / _derailAnimationTime);
-            timer -= Time.deltaTime;
+            float t = timer / _derailAnimationTime;
+            transform.rotation = Quaternion.Lerp(startRotation, targetRotation, t);
+
+            timer += Time.deltaTime;
             yield return null;
         }
 
-        transform.up = derailDir;
+        // S'assurer que la rotation finale est bien appliquée
+        transform.rotation = targetRotation;
         _isDerailing = false;
 
         this.enabled = false;
-        yield return null;
     }
 }

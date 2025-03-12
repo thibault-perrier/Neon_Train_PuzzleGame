@@ -59,13 +59,29 @@ public class TrackEndPoint : MonoBehaviour
 
     public Vector3 EvaluateRotation(float t)
     {
-        Vector3 p1aInterpolation = Vector3.Lerp(transform.position, transform.parent.transform.position, t + 0.1f);
-        Vector3 p1bInterpolation = Vector3.Lerp(transform.parent.transform.position, _endPoint.transform.position, t + 0.1f);
-        Vector3 p1 = Vector3.Lerp(p1aInterpolation, p1bInterpolation, t + 0.1f);
+        if (!_isTurn)
+        {
+            return (_endPoint.transform.position - transform.position).normalized;
+        }
 
-        Vector3 p2aInterpolation = Vector3.Lerp(transform.position, transform.parent.transform.position, Mathf.Max(0, t - 0.1f));
-        Vector3 p2bInterpolation = Vector3.Lerp(transform.parent.transform.position, _endPoint.transform.position, Mathf.Max(0, t - 0.1f));
-        Vector3 p2 = Vector3.Lerp(p2aInterpolation, p2bInterpolation, Mathf.Max(0, t - 0.1f));
+        if (t > 0.9f)
+        {
+            return -_endPoint.transform.forward;
+        }
+        else if (t < 0.1f)
+        {
+            return transform.forward;
+        }
+
+        float t1 = t + 0.1f;
+        Vector3 p1aInterpolation = Vector3.Lerp(transform.position, transform.parent.transform.position, t1);
+        Vector3 p1bInterpolation = Vector3.Lerp(transform.parent.transform.position, _endPoint.transform.position, t1);
+        Vector3 p1 = Vector3.Lerp(p1aInterpolation, p1bInterpolation, t1);
+
+        float t2 = t - 0.1f;
+        Vector3 p2aInterpolation = Vector3.Lerp(transform.position, transform.parent.transform.position, t2);
+        Vector3 p2bInterpolation = Vector3.Lerp(transform.parent.transform.position, _endPoint.transform.position, t2);
+        Vector3 p2 = Vector3.Lerp(p2aInterpolation, p2bInterpolation, t2);
 
         return (p1 - p2).normalized;
     }
