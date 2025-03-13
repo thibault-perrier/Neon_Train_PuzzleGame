@@ -6,16 +6,19 @@ public class TrackEndPoint : MonoBehaviour
 {
     public int trackID;
     [SerializeField] private List<TrackEndPoint> _connectedEndPoints = new();
-
+    public TrackType RailType;
     public bool _isTurn = false;
     private TrackEndPoint _endPoint;
+    private Transform _arrowDir => transform.GetChild(0).transform;
+
+
 
     public void Init(int tid)
     {
         trackID = tid;
         _endPoint = _connectedEndPoints[0];
         _isTurn = IsTurnTile();
-
+        UpdateArrowDir();
     }
 
     public TrackEndPoint GetTrackEndPoint()
@@ -74,5 +77,20 @@ public class TrackEndPoint : MonoBehaviour
         _endPoint = _connectedEndPoints[0];
 
         _isTurn = IsTurnTile();
+        UpdateArrowDir();
     }
+
+    private void UpdateArrowDir()
+    {
+        if (RailType == TrackType.RailSpur)
+            _arrowDir.forward = _endPoint.transform.position - transform.position;
+    }
+}
+
+public enum TrackType
+{
+    Straight,
+    Turn,
+    RailSpur,
+    Cross,
 }
