@@ -10,6 +10,8 @@ public class Track : MonoBehaviour
     [SerializeField] private float _rotationDuration = 0.5f;
     public bool IsAligned = true;
 
+    [SerializeField] private GameObject _buttonHolder;
+
     public void Init(int tid)
     {
         ID = tid;
@@ -51,5 +53,13 @@ public class Track : MonoBehaviour
 
         tileTrans.rotation = endRotation;
         IsAligned = true;
+    }
+
+
+
+
+    public void ToggleButtonTrack()
+    {
+        _buttonHolder.SetActive(!_buttonHolder.activeInHierarchy);
     }
 }

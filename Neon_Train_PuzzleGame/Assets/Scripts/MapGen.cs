@@ -35,6 +35,8 @@ public class MapGen : MonoBehaviour
                 int randomIndex = Random.Range(0, _tilePrefabs.Count);
                 Track track = Instantiate(_tilePrefabs[randomIndex], new Vector3(transform.position.x + x, transform.position.y + 0.25f, transform.position.z + z), Quaternion.identity, transform).GetComponent<Track>();
                 track.Init(x * _length + z);
+                if (Random.Range(0.0f, 1.0f) > 0.8f)
+                    track.ToggleButtonTrack();
             }
         }
     }
