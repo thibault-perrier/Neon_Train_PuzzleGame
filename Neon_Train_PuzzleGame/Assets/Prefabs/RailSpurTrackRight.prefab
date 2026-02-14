@@ -62,6 +62,11 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -83,9 +88,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &7771154741191482656
 BoxCollider:
@@ -166,6 +173,11 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -187,9 +199,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &2950566925464809722
 GameObject:
@@ -200,7 +214,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3125079788802434713}
-  - component: {fileID: 6289806941597717573}
+  - component: {fileID: 171114308852812924}
   m_Layer: 6
   m_Name: RailSpurTrackRight
   m_TagString: Untagged
@@ -226,7 +240,7 @@ Transform:
   - {fileID: 967109766730107332}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6289806941597717573
+--- !u!114 &171114308852812924
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -235,14 +249,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2950566925464809722}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f402a804cf034dd4cb19a6f93947092e, type: 3}
+  m_Script: {fileID: 11500000, guid: ad977cbbdaaa1934ebf9af1ddc6b637e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 0
-  _trackPoints: []
-  _rotationDuration: 0.5
-  IsAligned: 1
-  _buttonHolder: {fileID: 3746957426214895621}
+  m_EditorClassIdentifier: Assembly-CSharp::TrackSpur
+  _trackType: 20
+  _endpoints:
+  - {fileID: 9141331284676398617}
+  - {fileID: 192816592972542463}
+  - {fileID: 7523572710981742358}
 --- !u!1 &3421683088642595798
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,14 +300,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3421683088642595798}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c463df61b3a6d648a27aeb5b75870f3, type: 3}
+  m_Script: {fileID: 11500000, guid: 028de68b909e9f641a4b03759e8b4277, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackID: 0
-  _connectedEndPoints:
+  _connectedEndpoints:
   - {fileID: 9141331284676398617}
-  RailType: 2
-  _isTurn: 0
 --- !u!135 &2759855144173180805
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -324,7 +335,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 967109766730107332}
-  - component: {fileID: 3828028366899957770}
   - component: {fileID: 4963307280109389981}
   m_Layer: 6
   m_Name: ButtonActivator
@@ -349,18 +359,6 @@ Transform:
   - {fileID: 4066247289452974829}
   m_Father: {fileID: 3125079788802434713}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3828028366899957770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3746957426214895621}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 416420b65808cd44db9ab3a21b5d8178, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &4963307280109389981
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -440,6 +438,11 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -461,9 +464,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &4268443124372747204
 GameObject:
@@ -523,6 +528,11 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -544,9 +554,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &5197377964550152721
 GameObject:
@@ -606,6 +618,11 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -627,9 +644,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &5209288623911500265
 GameObject:
@@ -674,14 +693,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5209288623911500265}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c463df61b3a6d648a27aeb5b75870f3, type: 3}
+  m_Script: {fileID: 11500000, guid: 028de68b909e9f641a4b03759e8b4277, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackID: 0
-  _connectedEndPoints:
+  _connectedEndpoints:
   - {fileID: 9141331284676398617}
-  RailType: 2
-  _isTurn: 0
 --- !u!135 &350020220149833874
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -761,6 +777,11 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -782,9 +803,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &6525448795356967973
 GameObject:
@@ -844,6 +867,11 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -865,9 +893,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &7227746453608673561
 GameObject:
@@ -927,6 +957,11 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -948,9 +983,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &7727981121295414331
 GameObject:
@@ -1027,15 +1064,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7860215966671020104}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c463df61b3a6d648a27aeb5b75870f3, type: 3}
+  m_Script: {fileID: 11500000, guid: 028de68b909e9f641a4b03759e8b4277, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackID: 0
-  _connectedEndPoints:
-  - {fileID: 7523572710981742358}
+  _connectedEndpoints:
   - {fileID: 192816592972542463}
-  RailType: 2
-  _isTurn: 0
+  - {fileID: 7523572710981742358}
 --- !u!135 &4414758315586904288
 SphereCollider:
   m_ObjectHideFlags: 0

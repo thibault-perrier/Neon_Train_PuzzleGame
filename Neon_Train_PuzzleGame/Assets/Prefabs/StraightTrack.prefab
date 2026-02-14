@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6109487382190938847}
-  - component: {fileID: 5800159539234262395}
   - component: {fileID: 5684237011731198547}
   m_Layer: 6
   m_Name: ButtonActivator
@@ -34,18 +33,6 @@ Transform:
   - {fileID: 458374743031123156}
   m_Father: {fileID: 6148872414596062494}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5800159539234262395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3710561342081669483}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 416420b65808cd44db9ab3a21b5d8178, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &5684237011731198547
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -127,6 +114,11 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -148,9 +140,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &5710490819965256388
 BoxCollider:
@@ -231,6 +225,11 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -252,9 +251,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &4920861427764867039
 GameObject:
@@ -298,14 +299,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 4920861427764867039}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c463df61b3a6d648a27aeb5b75870f3, type: 3}
+  m_Script: {fileID: 11500000, guid: 028de68b909e9f641a4b03759e8b4277, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackID: 0
-  _connectedEndPoints:
+  _connectedEndpoints:
   - {fileID: 1069979986121591300}
-  RailType: 0
-  _isTurn: 0
 --- !u!135 &9037762302751081199
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -369,14 +367,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5660024779400671781}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c463df61b3a6d648a27aeb5b75870f3, type: 3}
+  m_Script: {fileID: 11500000, guid: 028de68b909e9f641a4b03759e8b4277, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackID: 0
-  _connectedEndPoints:
+  _connectedEndpoints:
   - {fileID: 1565291057212613581}
-  RailType: 0
-  _isTurn: 0
 --- !u!135 &7718761298032094082
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -489,6 +484,11 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -510,9 +510,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &7546722204893759820
 GameObject:
@@ -561,8 +563,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f402a804cf034dd4cb19a6f93947092e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 0
-  _trackPoints: []
-  _rotationDuration: 0.5
-  IsAligned: 1
-  _buttonHolder: {fileID: 3710561342081669483}
+  _trackType: 17
+  _endpoints:
+  - {fileID: 1565291057212613581}
+  - {fileID: 1069979986121591300}

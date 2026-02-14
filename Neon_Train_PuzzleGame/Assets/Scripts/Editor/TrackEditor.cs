@@ -15,7 +15,7 @@ public class TrackEditor : Editor
         Track track = (Track)target;
         if (GUILayout.Button("Toggle Button Track"))
         {
-            track.ToggleButtonTrack();
+            // track.ToggleButtonTrack();
         }
     }
 }
