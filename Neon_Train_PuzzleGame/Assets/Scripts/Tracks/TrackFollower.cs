@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class TrackFollower : MonoBehaviour
@@ -9,16 +10,34 @@ public class TrackFollower : MonoBehaviour
     private float _accelTimer;
     private float _currentSpeed;
 
-    private TrackEndpoint _trackStartingEndpoint; // TODO: struct for track informations and make two variables (current track and next track) so that when t >= 1, then current = next.
-    private TrackEndpoint _targetEndpoint;
-    private Vector3 _turningCircleCenter;
-    private Track _currentTrack;
-    private float _trackDist;
-    private float _travelledDist;
-    private bool _trackIsTurn;
 
+    private struct TrackInfo
+    {
+        public Track CurrentTrack;
+        public TrackEndpoint TrackStartEP;
+        public Vector3 TrackStartEP_Pos;
+        public TrackEndpoint TargetEP;
+        public Vector3 TargetEP_Pos;
+
+        public Vector3 TurningCircleCenter;
+        public float TurnCircleRadius;
+
+        public float TrackDist;
+
+        public bool TrackIsTurn;
+    }
+
+    //* Track infos 
+    private TrackInfo _currentTrackInfo;
+    private TrackInfo _nextTrackInfo;
+
+
+    //* Follower state tracking
     private bool _isMoving;
     private bool _reachedMaxSpeed;
+    private float _travelledDist;
+    private float _trackCompletion;
+
 
     // void Start()
     // {
@@ -36,17 +55,20 @@ public class TrackFollower : MonoBehaviour
 
     public void StartMoving()
     {
-        _trackStartingEndpoint = LevelStartEndpoint;
+        _currentTrackInfo.TrackStartEP = LevelStartEndpoint;
+        _currentTrackInfo.TrackStartEP_Pos = _currentTrackInfo.TrackStartEP.transform.position;
 
         // can be enclosed in func to pass from a track to another
-        _currentTrack = _trackStartingEndpoint.GetTrack();
-        _targetEndpoint = _trackStartingEndpoint.GetOtherEndEndpoint();
+        _currentTrackInfo.CurrentTrack = _currentTrackInfo.TrackStartEP.GetTrack();
+        _currentTrackInfo.TargetEP = _currentTrackInfo.TrackStartEP.GetOtherEndEndpoint();
+        _currentTrackInfo.TargetEP_Pos = _currentTrackInfo.TargetEP.transform.position;
 
-        if (_trackIsTurn = _currentTrack.IsTrackTurning(_trackStartingEndpoint))
+        if (_currentTrackInfo.TrackIsTurn = _currentTrackInfo.CurrentTrack.IsTrackTurning(_currentTrackInfo.TrackStartEP))
         {
-            _turningCircleCenter = _trackStartingEndpoint.CalculateExactCircleCenter(_targetEndpoint);
+            _currentTrackInfo.TurningCircleCenter = _currentTrackInfo.TrackStartEP.CalculateExactCircleCenter(_currentTrackInfo.TargetEP);
         }
-        _trackDist = TrackEndpoint.GetDistToOtherEnd(_trackStartingEndpoint.transform.position, _targetEndpoint.transform.position, _trackIsTurn);
+        _currentTrackInfo.TrackDist = TrackEndpoint.GetDistToOtherEnd(_currentTrackInfo.TrackStartEP_Pos, _currentTrackInfo.TargetEP_Pos, _currentTrackInfo.TrackIsTurn);
+
         // until here
 
 
@@ -65,21 +87,38 @@ public class TrackFollower : MonoBehaviour
         if (!_reachedMaxSpeed) Accelerate();
         else _currentSpeed = _folowerMaxSpeed;
 
-        _travelledDist += _currentSpeed * Time.deltaTime;
-        float t = _travelledDist / _trackDist;
-        if (_trackIsTurn)
+        if (_trackCompletion >= 1.0f) // means the follower reached the end of the track 
         {
-            Debug.Log("Is turn");
-            // calculate next pos based on center of circle and slerp
-            // TODO: Slerp to get the angle (0, 90) -> angle from OA to OB
-            //* pos is just (O + angle * radius)
+            // _travelledDist = 0.0f;
+            _travelledDist -= _currentTrackInfo.TrackDist;
+            _currentTrackInfo = _nextTrackInfo;
+            _nextTrackInfo = new();
+        }
+
+        _travelledDist += _currentSpeed * Time.deltaTime;
+        _trackCompletion = _travelledDist / _currentTrackInfo.TrackDist;
+        if (_currentTrackInfo.TrackIsTurn)
+        {
+            //* pos is (O + R * dir)
+            // R is |OA|
+            // dir is (cos(teta), sin(teta))
+
+            // S = teta * R
+            // S is the displacement on the circle so _travelledDist
+            // teta is S / R
+
+            _currentTrackInfo.TurnCircleRadius = (_currentTrackInfo.TrackStartEP_Pos - _currentTrackInfo.TurningCircleCenter).magnitude;
+            float teta = _travelledDist / _currentTrackInfo.TurnCircleRadius;
+
+            Vector3 displacement = new(_currentTrackInfo.TurnCircleRadius * Mathf.Cos(teta), 0.0f, _currentTrackInfo.TurnCircleRadius * Mathf.Sin(teta));
+            transform.position = _currentTrackInfo.TurningCircleCenter + displacement;
         }
         else // straight
         {
-            transform.position = Vector3.Lerp(_trackStartingEndpoint.transform.position, _targetEndpoint.transform.position, t);
+            transform.position = Vector3.Lerp(_currentTrackInfo.TrackStartEP_Pos, _currentTrackInfo.TargetEP_Pos, _trackCompletion);
         }
 
-        // TODO: remember to calculate follower forward so that is can facec the correct way when moving
+        // TODO: remember to calculate follower forward so that is can face the correct way when moving
     }
 
 
@@ -94,5 +133,21 @@ public class TrackFollower : MonoBehaviour
             _reachedMaxSpeed = true;
             _accelTimer = 0;
         }
+    }
+
+
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.GetComponent<TrackEndpoint>() is TrackEndpoint endpoint && endpoint.GetTrack().ID != _currentTrackInfo.CurrentTrack.ID)
+        {
+            SetNextEndpoint(endpoint);
+        }
+    }
+
+    private void SetNextEndpoint(TrackEndpoint endpoint)
+    {
+        Debug.Log("Next track will be " + endpoint.GetTrack());
+        throw new NotImplementedException();
     }
 }
