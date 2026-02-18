@@ -10,17 +10,11 @@ public class Track : MonoBehaviour
 
     [SerializeField] protected List<TrackEndpoint> _endpoints = new();
 
-    public bool IsTrackTurning(TrackEndpoint _startingTrackEndpoint)
+
+    void Start()
     {
-        TrackEndpoint otherEnd = _startingTrackEndpoint.GetOtherEndEndpoint();
-
-        // projection of b onto a = (A dot B) / mag(A)
-        Vector3 startToMiddleDir = Vector3.ProjectOnPlane(transform.position - _startingTrackEndpoint.transform.position, Vector3.up).normalized;
-        Vector3 endToEndDir = Vector3.ProjectOnPlane(otherEnd.transform.position - _startingTrackEndpoint.transform.position, Vector3.up).normalized;
-
-        float dot = Vector3.Dot(startToMiddleDir, endToEndDir);
-        Debug.Log(dot);
-        return dot < 0.9f;
+        foreach (TrackEndpoint ep in _endpoints) //! todo: check if id is important since getting the track is essential. 
+            ep.SetTrackID(ID);
     }
 
     public virtual void DoTrackActivation()
@@ -29,9 +23,25 @@ public class Track : MonoBehaviour
     }
 
 
+    public bool IsTrackTurning(TrackEndpoint _startingTrackEndpoint)
+    {
+        TrackEndpoint otherEnd = _startingTrackEndpoint.GetOtherEndEndpoint();
+
+        // projection of b onto a = (A dot B) / mag(A)
+        Vector3 startToMiddleDir = Vector3.ProjectOnPlane(transform.position - _startingTrackEndpoint.transform.position, Vector3.up).normalized;
+        Vector3 endToEndDir = Vector3.ProjectOnPlane(otherEnd.transform.position - _startingTrackEndpoint.transform.position, Vector3.up).normalized;
+
+        // float dot = Vector3.Dot(startToMiddleDir, endToEndDir);
+        // Debug.Log(dot);
+        // return dot < 0.9f;
+        return Vector3.Dot(startToMiddleDir, endToEndDir) < 0.9f;
+    }
 
 
-
+    public TrackEndpoint GetFstTrackEndpoint()
+    {
+        return _endpoints[0] ?? default;
+    }
 
 
 
