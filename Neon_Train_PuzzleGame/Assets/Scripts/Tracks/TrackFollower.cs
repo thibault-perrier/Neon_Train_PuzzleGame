@@ -10,17 +10,17 @@ public class TrackFollower : MonoBehaviour
     private float _accelTimer;
     private float _currentSpeed;
 
-
+    [Serializable]
     private struct TrackInfo
     {
         public Track CurrentTrack;
+        public Vector3 TrackMid_Pos;
+
         public TrackEndpoint TrackStartEP;
         public Vector3 TrackStartEP_Pos;
+
         public TrackEndpoint TargetEP;
         public Vector3 TargetEP_Pos;
-
-        public Vector3 TurningCircleCenter;
-        public float TurnCircleRadius;
 
         public float TrackDist;
 
@@ -29,7 +29,7 @@ public class TrackFollower : MonoBehaviour
 
     //* Track infos 
     private TrackInfo _currentTrackInfo;
-    private TrackInfo _nextTrackInfo;
+    private TrackInfo? _nextTrackInfo;
 
 
     //* Follower state tracking
@@ -55,28 +55,13 @@ public class TrackFollower : MonoBehaviour
 
     public void StartMoving()
     {
-        _currentTrackInfo.TrackStartEP = LevelStartEndpoint;
-        _currentTrackInfo.TrackStartEP_Pos = _currentTrackInfo.TrackStartEP.transform.position;
-
-        // can be enclosed in func to pass from a track to another
-        _currentTrackInfo.CurrentTrack = _currentTrackInfo.TrackStartEP.GetTrack();
-        _currentTrackInfo.TargetEP = _currentTrackInfo.TrackStartEP.GetOtherEndEndpoint();
-        _currentTrackInfo.TargetEP_Pos = _currentTrackInfo.TargetEP.transform.position;
-
-        if (_currentTrackInfo.TrackIsTurn = _currentTrackInfo.CurrentTrack.IsTrackTurning(_currentTrackInfo.TrackStartEP))
-        {
-            _currentTrackInfo.TurningCircleCenter = _currentTrackInfo.TrackStartEP.CalculateExactCircleCenter(_currentTrackInfo.TargetEP);
-        }
-        _currentTrackInfo.TrackDist = TrackEndpoint.GetDistToOtherEnd(_currentTrackInfo.TrackStartEP_Pos, _currentTrackInfo.TargetEP_Pos, _currentTrackInfo.TrackIsTurn);
-
-        // until here
-
-
+        _currentTrackInfo = CreateEPInfo(LevelStartEndpoint);
         _isMoving = true;
     }
 
     public void StopMoving()
     {
+        Debug.Log("Crash");
         _isMoving = false;
     }
 
@@ -91,27 +76,26 @@ public class TrackFollower : MonoBehaviour
         {
             // _travelledDist = 0.0f;
             _travelledDist -= _currentTrackInfo.TrackDist;
-            _currentTrackInfo = _nextTrackInfo;
-            _nextTrackInfo = new();
+
+            if (_nextTrackInfo == null)
+            {
+                StopMoving();
+                return;
+            }
+
+            _currentTrackInfo = (TrackInfo)_nextTrackInfo;
+            _nextTrackInfo = null;
         }
 
         _travelledDist += _currentSpeed * Time.deltaTime;
         _trackCompletion = _travelledDist / _currentTrackInfo.TrackDist;
         if (_currentTrackInfo.TrackIsTurn)
         {
-            //* pos is (O + R * dir)
-            // R is |OA|
-            // dir is (cos(teta), sin(teta))
-
-            // S = teta * R
-            // S is the displacement on the circle so _travelledDist
-            // teta is S / R
-
-            _currentTrackInfo.TurnCircleRadius = (_currentTrackInfo.TrackStartEP_Pos - _currentTrackInfo.TurningCircleCenter).magnitude;
-            float teta = _travelledDist / _currentTrackInfo.TurnCircleRadius;
-
-            Vector3 displacement = new(_currentTrackInfo.TurnCircleRadius * Mathf.Cos(teta), 0.0f, _currentTrackInfo.TurnCircleRadius * Mathf.Sin(teta));
-            transform.position = _currentTrackInfo.TurningCircleCenter + displacement;
+            // double interpolation: aIP = a to track center, bIP = track center to b, pos = aIP to bIP
+            Vector3 aInterpolation = Vector3.Lerp(_currentTrackInfo.TrackStartEP_Pos, _currentTrackInfo.TrackMid_Pos, _trackCompletion);
+            Vector3 bInterpolation = Vector3.Lerp(_currentTrackInfo.TrackMid_Pos, _currentTrackInfo.TargetEP_Pos, _trackCompletion);
+            Vector3 pos = Vector3.Lerp(aInterpolation, bInterpolation, _trackCompletion);
+            transform.position = pos;
         }
         else // straight
         {
@@ -141,13 +125,32 @@ public class TrackFollower : MonoBehaviour
     {
         if (other.GetComponent<TrackEndpoint>() is TrackEndpoint endpoint && endpoint.GetTrack().ID != _currentTrackInfo.CurrentTrack.ID)
         {
-            SetNextEndpoint(endpoint);
+            _nextTrackInfo = CreateEPInfo(endpoint);
         }
     }
 
-    private void SetNextEndpoint(TrackEndpoint endpoint)
+    private TrackInfo CreateEPInfo(TrackEndpoint endpoint)
     {
-        Debug.Log("Next track will be " + endpoint.GetTrack());
-        throw new NotImplementedException();
+        TrackInfo trackInfo = new()
+        {
+            TrackStartEP = endpoint,
+            TrackStartEP_Pos = endpoint.transform.position,
+
+            TargetEP = endpoint.GetOtherEndEndpoint(),
+            // TargetEP_Pos = TargetEP.transform.position,
+
+            CurrentTrack = endpoint.GetTrack(),
+        };
+
+        trackInfo.TargetEP_Pos = trackInfo.TargetEP.transform.position;
+
+        Vector3 TrackRawPos = trackInfo.CurrentTrack.transform.position;
+        trackInfo.TrackMid_Pos = new Vector3(TrackRawPos.x, trackInfo.TargetEP_Pos.y, TrackRawPos.z);
+
+        trackInfo.TrackIsTurn = trackInfo.CurrentTrack.IsTrackTurning(trackInfo.TrackStartEP);
+        trackInfo.TrackDist = TrackEndpoint.GetDistToOtherEnd(trackInfo.TrackStartEP_Pos, trackInfo.TargetEP_Pos, trackInfo.TrackIsTurn);
+
+        return trackInfo;
     }
 }
+

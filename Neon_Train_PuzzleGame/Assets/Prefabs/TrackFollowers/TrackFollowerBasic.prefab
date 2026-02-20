@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6968907259033890813}
   - component: {fileID: 6046834208238277861}
   - component: {fileID: 1268505673353151033}
+  - component: {fileID: -7237917951108109047}
   m_Layer: 0
   m_Name: TrackFollowerBasic
   m_TagString: TrackFollower
@@ -49,7 +50,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -67,9 +68,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f9e56d16aa424f40859d5b9e48ae29a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TrackFollower
-  _folowerMaxSpeed: 0.5
-  _timeBeforeFullSpeed: 10
+  _folowerMaxSpeed: 1
+  _timeBeforeFullSpeed: 3
   LevelStartEndpoint: {fileID: 0}
+--- !u!54 &-7237917951108109047
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805841309067071556}
+  serializedVersion: 5
+  m_Mass: 0.0000001
+  m_LinearDamping: 0
+  m_AngularDamping: 0
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 0
+  m_ImplicitTensor: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3075586564911826077
 GameObject:
   m_ObjectHideFlags: 0
