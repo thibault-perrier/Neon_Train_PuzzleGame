@@ -65,7 +65,6 @@ GameObject:
   - component: {fileID: 4659043720944504882}
   - component: {fileID: 5731492888216831945}
   - component: {fileID: 4828497173651649546}
-  - component: {fileID: 5710490819965256388}
   m_Layer: 6
   m_Name: Model
   m_TagString: Untagged
@@ -146,27 +145,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5710490819965256388
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4253067466541249750}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4427886538807368856
 GameObject:
   m_ObjectHideFlags: 0
@@ -526,6 +504,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6148872414596062494}
   - component: {fileID: 1932220630838601566}
+  - component: {fileID: 4494203823090243398}
   m_Layer: 6
   m_Name: StraightTrack
   m_TagString: Untagged
@@ -567,3 +546,24 @@ MonoBehaviour:
   _endpoints:
   - {fileID: 1565291057212613581}
   - {fileID: 1069979986121591300}
+--- !u!65 &4494203823090243398
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7546722204893759820}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.95, y: 0.5, z: 0.95}
+  m_Center: {x: 0, y: 0, z: 0}

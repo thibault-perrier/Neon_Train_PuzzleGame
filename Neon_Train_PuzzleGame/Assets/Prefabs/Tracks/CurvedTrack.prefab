@@ -557,7 +557,6 @@ GameObject:
   - component: {fileID: 4492836480550764821}
   - component: {fileID: 8680037142331735599}
   - component: {fileID: 4134132798967767159}
-  - component: {fileID: 6709524906604583056}
   m_Layer: 6
   m_Name: Model
   m_TagString: Untagged
@@ -642,27 +641,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6709524906604583056
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6059229322848189264}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6472745383302180104
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,6 +899,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5932525586045132600}
   - component: {fileID: 5650022186165517613}
+  - component: {fileID: 7364890778367257883}
   m_Layer: 6
   m_Name: CurvedTrack
   m_TagString: Untagged
@@ -963,3 +942,24 @@ MonoBehaviour:
   _endpoints:
   - {fileID: 2751537964198237037}
   - {fileID: 8795937805413629434}
+--- !u!65 &7364890778367257883
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8751501536296163413}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.95, y: 0.5, z: 0.95}
+  m_Center: {x: 0, y: 0, z: 0}

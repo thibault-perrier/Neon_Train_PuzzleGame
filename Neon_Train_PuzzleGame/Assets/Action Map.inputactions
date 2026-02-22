@@ -1,0 +1,63 @@
+{
+    "version": 1,
+    "name": "Action Map",
+    "maps": [
+        {
+            "name": "Player Phone",
+            "id": "52780966-0cc2-44b2-af3c-c2e673c50835",
+            "actions": [
+                {
+                    "name": "Rotate Tile",
+                    "type": "Value",
+                    "id": "027e0581-fb74-4621-a3c4-513f9a411a95",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b6055613-d10a-4e88-b730-aa610285f3da",
+                    "path": "<Touchscreen>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate Tile",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Player PC",
+            "id": "6208df27-757e-4ea5-944c-9b290806f585",
+            "actions": [
+                {
+                    "name": "Rotate Tile",
+                    "type": "Button",
+                    "id": "70a4fdff-e1d1-484d-bcf5-0da32e6e0b3c",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b2e493b8-30b7-437c-8c20-8ddd618e5d82",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate Tile",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

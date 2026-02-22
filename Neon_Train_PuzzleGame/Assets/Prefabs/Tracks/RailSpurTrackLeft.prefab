@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8276133626943208899}
   - component: {fileID: 251180554103668564}
   - component: {fileID: 3635945873604508010}
-  - component: {fileID: 7771154741191482656}
   m_Layer: 6
   m_Name: Model
   m_TagString: Untagged
@@ -94,27 +93,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7771154741191482656
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1061654665810636550}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1764570265316638433
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,6 +193,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3125079788802434713}
   - component: {fileID: 3950233013136183538}
+  - component: {fileID: 4636690750922876704}
   m_Layer: 6
   m_Name: RailSpurTrackLeft
   m_TagString: Untagged
@@ -257,6 +236,27 @@ MonoBehaviour:
   - {fileID: 9141331284676398617}
   - {fileID: 192816592972542463}
   - {fileID: 7523572710981742358}
+--- !u!65 &4636690750922876704
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2950566925464809722}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.95, y: 0.5, z: 0.95}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3421683088642595798
 GameObject:
   m_ObjectHideFlags: 0
