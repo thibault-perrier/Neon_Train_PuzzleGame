@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class TrackFollower : MonoBehaviour
@@ -6,6 +7,7 @@ public class TrackFollower : MonoBehaviour
     [SerializeField] private float _folowerMaxSpeed;
     [SerializeField] private float _timeBeforeFullSpeed;
     [SerializeField] public TrackEndpoint LevelStartEndpoint;
+    [SerializeField] public float _crashAnimDuration = 0.35f;
 
     private float _accelTimer;
     private float _currentSpeed;
@@ -59,10 +61,37 @@ public class TrackFollower : MonoBehaviour
         _isMoving = true;
     }
 
+
     public void StopMoving()
     {
-        Debug.Log("Crash");
         _isMoving = false;
+    }
+
+    public void Crash()
+    {
+        StopMoving();
+        StartCoroutine(DoCrashAnimation());
+    }
+
+    private IEnumerator DoCrashAnimation(bool crashLeft = true)
+    {
+        float _timer = _crashAnimDuration;
+        float targetAngle = 90 * (crashLeft ? 1 : -1);
+        Vector3 currRot = transform.eulerAngles;
+
+        while (_timer >= 0.0f)
+        {
+            _timer -= Time.deltaTime;
+
+            currRot = transform.eulerAngles;
+            currRot.z = Mathf.Lerp(targetAngle, 0.0f, _timer / _crashAnimDuration);
+            transform.eulerAngles = currRot;
+
+            yield return null;
+        }
+        currRot.z = targetAngle;
+        transform.eulerAngles = currRot;
+        yield return null;
     }
 
     void Update()
@@ -79,7 +108,7 @@ public class TrackFollower : MonoBehaviour
 
             if (_nextTrackInfo == null)
             {
-                StopMoving();
+                Crash();
                 return;
             }
 
@@ -95,11 +124,18 @@ public class TrackFollower : MonoBehaviour
             Vector3 aInterpolation = Vector3.Lerp(_currentTrackInfo.TrackStartEP_Pos, _currentTrackInfo.TrackMid_Pos, _trackCompletion);
             Vector3 bInterpolation = Vector3.Lerp(_currentTrackInfo.TrackMid_Pos, _currentTrackInfo.TargetEP_Pos, _trackCompletion);
             Vector3 pos = Vector3.Lerp(aInterpolation, bInterpolation, _trackCompletion);
+
+            Vector3 forward = Vector3.Lerp(
+                    _currentTrackInfo.TrackMid_Pos - _currentTrackInfo.TrackStartEP_Pos,
+                    _currentTrackInfo.TargetEP_Pos - _currentTrackInfo.TrackMid_Pos,
+                    _trackCompletion); //.normalized ??
             transform.position = pos;
+            transform.forward = forward;
         }
         else // straight
         {
             transform.position = Vector3.Lerp(_currentTrackInfo.TrackStartEP_Pos, _currentTrackInfo.TargetEP_Pos, _trackCompletion);
+            transform.forward = _currentTrackInfo.TargetEP_Pos - _currentTrackInfo.TrackStartEP_Pos;
         }
 
         // TODO: remember to calculate follower forward so that is can face the correct way when moving

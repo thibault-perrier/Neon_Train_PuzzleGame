@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6968907259033890813}
-  - component: {fileID: 6046834208238277861}
   - component: {fileID: 1268505673353151033}
+  - component: {fileID: 6046834208238277861}
   - component: {fileID: -7237917951108109047}
   m_Layer: 0
   m_Name: TrackFollowerBasic
@@ -35,6 +35,22 @@ Transform:
   - {fileID: 2895165640464791417}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1268505673353151033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805841309067071556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f9e56d16aa424f40859d5b9e48ae29a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TrackFollower
+  _folowerMaxSpeed: 1
+  _timeBeforeFullSpeed: 3
+  LevelStartEndpoint: {fileID: 0}
+  _crashAnimDuration: 0.35
 --- !u!65 &6046834208238277861
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54,23 +70,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.5, y: 0.2, z: 0.25}
+  m_Size: {x: 0.25, y: 0.25, z: 0.5}
   m_Center: {x: 0, y: 0.12, z: 0}
---- !u!114 &1268505673353151033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 805841309067071556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f9e56d16aa424f40859d5b9e48ae29a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TrackFollower
-  _folowerMaxSpeed: 1
-  _timeBeforeFullSpeed: 3
-  LevelStartEndpoint: {fileID: 0}
 --- !u!54 &-7237917951108109047
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -304,7 +305,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7023700788520819793}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.12, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.55}
   m_ConstrainProportionsScale: 0
@@ -313,7 +314,7 @@ Transform:
   - {fileID: 6294830518356465824}
   - {fileID: 3410795964266932783}
   m_Father: {fileID: 6968907259033890813}
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2708071223801223193
 MeshFilter:
   m_ObjectHideFlags: 0
