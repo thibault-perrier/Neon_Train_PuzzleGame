@@ -41,12 +41,20 @@ public class TrackManager : MonoBehaviour
         {
             TrackFollower follower = Instantiate(_trackFollowerPrefab, _trackFollowerHolder);
             follower.Init(endpoint);
+            _trackFollowers.Add(follower);
         }
     }
 
     private void GetTracksInLevel()
     {
         _tracks = _mapHolder.GetComponentsInChildren<Track>().ToList();
+    }
+
+    public void StartTrains()
+    {
+        Debug.Log("Starting Trains");
+        foreach (TrackFollower f in _trackFollowers)
+            f.StartMoving();
     }
 
     //     void OnEnable()

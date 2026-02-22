@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f9e56d16aa424f40859d5b9e48ae29a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TrackFollower
-  _folowerMaxSpeed: 1
+  _folowerMaxSpeed: 2
   _timeBeforeFullSpeed: 3
   LevelStartEndpoint: {fileID: 0}
   _crashAnimDuration: 0.35

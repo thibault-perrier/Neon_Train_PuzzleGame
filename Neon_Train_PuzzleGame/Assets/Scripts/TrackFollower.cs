@@ -49,15 +49,15 @@ public class TrackFollower : MonoBehaviour
     public void Init(TrackEndpoint endpoint)
     {
         LevelStartEndpoint = endpoint;
-        transform.position = endpoint.transform.position;
+        _currentTrackInfo = CreateEPInfo(LevelStartEndpoint);
 
-        StartMoving();
+        transform.position = endpoint.transform.position;
     }
 
 
     public void StartMoving()
     {
-        _currentTrackInfo = CreateEPInfo(LevelStartEndpoint);
+        Debug.Log("Starting to move");
         _isMoving = true;
     }
 
